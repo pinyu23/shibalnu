@@ -166,7 +166,7 @@ button{
 
 .log_in_button1{
   width: 300px;
-  height: 30px;
+  height: 40px;
   border-radius: 10px;
   cursor: pointer;
   margin-top: 30px;
@@ -177,7 +177,7 @@ button{
   
 .log_in_button2{
   width: 145px;
-  height: 30px;
+  height: 40px;
   border-radius: 10px;
   cursor: pointer;
   background-color: #E72D2D;
@@ -187,7 +187,7 @@ button{
 
 .log_in_button3{
   width: 150px;
-  height: 30px;
+  height: 40px;
   border-radius: 10px;
   cursor: pointer;
   background-color: #004A8B;
@@ -200,7 +200,7 @@ form{
 }
 
 .password{
-  margin-top: 30px;
+  margin-top: 11px;
 }
 
 .forget{
@@ -319,7 +319,7 @@ form{
 }
 
 form div{
-    margin-top: 15px;
+    margin-top: 3px;
 }
 
 .sign_up_button1{
@@ -330,7 +330,7 @@ form div{
   margin-top: 10px;
   border: none;
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
   width: 250px;
 }
 

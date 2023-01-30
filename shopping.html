@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理柴‧理財shibalnu</title>
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="stylesheet" href="global.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+
+        <!-- 登入按鈕 -->
+        <div id="lightbox" class="none">
+            <article>
+              <div class="log_in_left">
+                  <h2>會員登入</h2>
+                  <div class="login_logo3"><img src="images/logo_3.png" alt=""></div>
+              </div>
+              <div class="log_in_right">
+                  <button class="log_in_close" type="button"><img src="images/fork.png" alt=""></button>
+                  <div class="log_in_contact">
+                      <div class="login_logo2"><img src="images/logo_2.png" alt=""></div>
+                      <form action="#" method="">
+                          <div class="username">
+                              <label for="username">帳號:</label>
+                              <input type="text" placeholder=" 請輸入帳號" id="username" autocomplete="off">
+                          </div>
+                          <div class="password">
+                              <label for="password">密碼:</label>
+                              <input type="password" placeholder=" 請輸入密碼" id="password" autocomplete="off">
+                          </div>
+                          <div>
+                              <button class="log_in_button1" type="button">登入</button>
+                          </div>
+                          <div>
+                              <button class="log_in_button2" type="button">使用Google登入</button>
+                              <button class="log_in_button3" type="button">使用Facebook登入</button>
+                          </div>
+                      </form>
+                      <p class="forget"><a href="">忘記密碼請點我</a></p>
+                  </div>
+              </div>
+            </article>
+        </div>
+        <!-- 登入按鈕end -->
+
+        <!-- 註冊按鈕 -->
+        <div id="lightbox_2" class="none">
+            <article2 class="sign_in">
+                <div class="sign_in_inner">
+                    <button class="sign_in_close" type="button"><img src="images/fork.png" alt=""></button>
+                    <div class="sign_in_contact">
+                        <div class="signin_logo2"><img src="images/logo_2.png" alt=""></div>
+                        <h2>會員註冊</h2>
+                        <form action="#" method="">
+                            <div class="email">
+                                <label for="username">電子郵件地址:</label>
+                                <br>
+                                <input type="text" placeholder=" e.g. abc123@gmaail.com" id="email" autocomplete="off">
+                            </div>
+                            <div class="username">
+                                <label for="username">帳號:</label>
+                                <br>
+                                <input type="text" placeholder=" 請輸入8~16英文及數字" id="username" autocomplete="off">
+                            </div>
+                            <div class="phone">
+                                <label for="username">手機號碼:</label>
+                                <br>
+                                <input type="text" placeholder=" e.g. 0911123456" id="phone" autocomplete="off">
+                            </div>
+                            <div class="password">
+                                <label for="password">密碼:</label>
+                                <br>
+                                <input type="password" placeholder=" 請輸入8~16英文及數字" id="password" autocomplete="off">
+                            </div>
+                            <div class="passwords">
+                                <label for="password">確認密碼:</label>
+                                <br>
+                                <input type="password" placeholder=" 請再次輸入密碼" id="password2" autocomplete="off">
+                            </div>
+                            <div class="newspaper">
+                                <input type="checkbox">
+                                <label>我願意收到理柴理財的電子報</label>
+                            </div>
+                            <div class="agree">
+                                <input type="checkbox">
+                                <label><a href="">我已同意並閱讀隱私權保護政策</a></label>
+                            </div>
+                            <div class="sign_up_button1">
+                                <button class="sign_in_button1" type="button">註冊</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article2>
+        </div>
+
+
+        
+        <!-- 註冊按鈕end -->
+
+        <!-------導覽列-------->
+        <header class="page_header dropdowns">
+            <div class="header_inner">
+                <a href="index.html" class="header_logo">
+                    <img src="images/logo_1.png" alt="">
+                </a>
+                <div class="header_nav">
+                    <nav>
+                        <!-------選單-------->
+                        <ul class="header_navigation_list">
+                            <li class="header_navigation_item">
+                                <a href="new.html">最新消息</a></li>
+                            <li class="header_navigation_item">
+                                <a href="digital_bank.html">數位銀行</a></li>
+                            <li class="header_navigation_item">
+                                <a href="credit_card.html">信用卡</a></li>
+                            <li class="header_navigation_item">
+                                <a href="financial.html">理財攻略</a></li>
+                            <li class="header_navigation_item">
+                                <a href="about.html">關於我們</a></li>
+                            <li class="header_navigation_item">
+                                <a href="shopping.html">購書專區</a></li>
+                        </ul>
+                        <!-------選單end-------->
+
+
+                        <!-------登入/註冊區-------->
+                        <div class="header_btn">
+                            <button class="header_navigation_log_in">登入</button>
+                            <button class="header_navigation_sign_up">註冊</button>
+                        </div>
+                        <!-------登入/註冊區end-------->
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-------導覽列end-------->
+        <main>
+            <span id="tab-1">暢銷榜</span>
+            <span id="tab-2">近期新書</span>
+            <span id="tab-3">總覽</span>
+        
+        
+            <!-- 頁籤按鈕 -->
+            <div id="tab">
+                <ul>
+                    <li><a href="#tab-1">暢銷榜</a></li>
+                    <li><a href="#tab-2">近期新書</a></li>
+                    <li><a href="#tab-3">總覽</a></li>
+                </ul>
+        
+                <!-- 頁籤的內容區塊 -->
+                <div class="tab-content-1">
+                    <!-- <div>主頁面顯示的內容</div> -->
+                    <div class="bookall">
+                        <div class="single">
+                            <img class="book" src="images/book/book1.png" alt="">
+                            <div class="word_contact">
+                                <h3>小資向錢衝!</h3>
+                                <div class="inner">
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book1.png" alt="">
+                            <div class="word_contact">
+                                <h3>小資向錢衝!</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book1.png" alt="">
+                            <div class="word_contact">
+                                <h3>小資向錢衝!</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book1.png" alt="">
+                            <div class="word_contact">
+                                <h3>小資向錢衝!</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book9.png" alt="">
+                            <div class="word_contact">
+                                <h3>動態現金流</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book9.png" alt="">
+                            <div class="word_contact">
+                                <h3>動態現金流</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book9.png" alt="">
+                            <div class="word_contact">
+                                <h3>動態現金流</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book9.png" alt="">
+                            <div class="word_contact">
+                                <h3>動態現金流</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book10.png" alt="">
+                            <div class="word_contact">
+                                <h3>個人理財</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book10.png" alt="">
+                            <div class="word_contact">
+                                <h3>個人理財</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book10.png" alt="">
+                            <div class="word_contact">
+                                <h3>個人理財</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book10.png" alt="">
+                            <div class="word_contact">
+                                <h3>個人理財</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="tab-content-2">
+                    <div class="bookall">
+                        <div class="single">
+                            <img class="book" src="images/book/book2.png" alt="">
+                            <div class="word_contact">
+                                <h3>快樂生活與財富投資寶典</h3>
+                                <div class="inner">
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book2.png" alt="">
+                            <div class="word_contact">
+                                <h3>快樂生活與財富投資寶典</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book2.png" alt="">
+                            <div class="word_contact">
+                                <h3>快樂生活與財富投資寶典</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book2.png" alt="">
+                            <div class="word_contact">
+                                <h3>快樂生活與財富投資寶典</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book4.png" alt="">
+                            <div class="word_contact">
+                                <h3>40歲開始子彈存股翻倍賺</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book4.png" alt="">
+                            <div class="word_contact">
+                                <h3>40歲開始子彈存股翻倍賺</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book4.png" alt="">
+                            <div class="word_contact">
+                                <h3>40歲開始子彈存股翻倍賺</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book4.png" alt="">
+                            <div class="word_contact">
+                                <h3>40歲開始子彈存股翻倍賺</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book13.png" alt="">
+                            <div class="word_contact">
+                                <h3>不蝕本選股法</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book13.png" alt="">
+                            <div class="word_contact">
+                                <h3>不蝕本選股法</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book13.png" alt="">
+                            <div class="word_contact">
+                                <h3>不蝕本選股法</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book13.png" alt="">
+                            <div class="word_contact">
+                                <h3>不蝕本選股法</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+        
+                <div class="tab-content-3">
+                    <div class="bookall">
+                        <div class="single">
+                            <img class="book" src="images/book/book3.png" alt="">
+                            <div class="word_contact">
+                                <h3>我炒的是人生，不是股票</h3>
+                                <div class="inner">
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book3.png" alt="">
+                            <div class="word_contact">
+                                <h3>我炒的是人生，不是股票</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book3.png" alt="">
+                            <div class="word_contact">
+                                <h3>我炒的是人生，不是股票</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book3.png" alt="">
+                            <div class="word_contact">
+                                <h3>我炒的是人生，不是股票</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book17.png" alt="">
+                            <div class="word_contact">
+                                <h3>社畜的財務自由計畫2</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book17.png" alt="">
+                            <div class="word_contact">
+                                <h3>社畜的財務自由計畫2</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book17.png" alt="">
+                            <div class="word_contact">
+                                <h3>社畜的財務自由計畫2</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book17.png" alt="">
+                            <div class="word_contact">
+                                <h3>社畜的財務自由計畫2</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book18.png" alt="">
+                            <div class="word_contact">
+                                <h3>巴菲特的價值投資與<br>
+                                    彼得林區的趨勢投資</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book18.png" alt="">
+                            <div class="word_contact">
+                                <h3>巴菲特的價值投資與<br>
+                                    彼得林區的趨勢投資</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book18.png" alt="">
+                            <div class="word_contact">
+                                <h3>巴菲特的價值投資與<br>
+                                    彼得林區的趨勢投資</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                        <div class="single">
+                            <img class="book" src="images/book/book18.png" alt="">
+                            <div class="word_contact">
+                                <h3>巴菲特的價值投資與<br>
+                                    彼得林區的趨勢投資</h3>
+                                <div>
+                                    <div class="buy"><a href="">加入購物車</a></div>
+                                    <img class="heart" src="images/heart.png" alt="">
+                                </div>
+                                <p>NT 350 元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </main>
+
+        <!-------頁尾-------->
+        <footer>
+            <div class="footer">
+                <div class="footer_inner">
+                    <div class="footer_contact">
+                        <div><a class="footer_logo" href="index.html"><img src="images/logo_2.png" alt=""></a></div>
+                        <div class="contact">
+                            -聯絡我們- <br>
+                            <br>
+                            專線 : 0800-123-456 <br>
+                            信箱 : abc123456@shibaInu.com <br>
+                            營業時間 : 週一 ~ 週五   8 : 00 ~ 17 : 00
+                        </div>
+                        <div class="contact_icon">
+                            <a class="icon" href=""><img src="images/instagram.png" alt=""></a>
+                            <a class="icon" href=""><img src="images/youtube.png" alt=""></a>
+                            <a class="icon" href=""><img src="images/facebook.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div><hr></div>
+                    <div class="tibame">本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。<br>參考資源: 理享人生、李勛、理白小姐、瑞絲投資理財、信用卡社、股感。<br>2023 © All rights reserved</div>
+                </div>
+            </div>
+        </footer>
+        <!-------頁尾end-------->
+        <!-- 跳至最上方的按鈕 -->
+        <button type="button" id="BackTop" class="toTop-arrow"></button>
+        <!-- 跳至最上方的按鈕end -->
+
+    </div>
+
+
+
+    <!-- js開始 -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- 登入按鈕 -->
+    <script>
+        let lightbox_el = document.getElementById("lightbox");
+
+        // 頁面上的按鈕
+        var header_navigation_log_in= document.getElementsByClassName("header_navigation_log_in")[0];
+        header_navigation_log_in.addEventListener("click", function(){
+            lightbox_el.classList.remove("none");
+        });
+
+
+        var log_in_close = document.getElementsByClassName("log_in_close")[0];
+        log_in_close.addEventListener("click", function(){
+            lightbox_el.classList.add("none");
+        });
+
+
+        lightbox_el.addEventListener("click", function(){
+            this.classList.add("none");
+        });
+
+        // 點擊 lightbox 中的白色區域，不會關掉 modal
+        lightbox_el.querySelector("article").addEventListener("click", function(e){
+            e.stopPropagation();
+        });
+    </script>
+    <!-- 登入按鈕end -->
+
+    <!-- 註冊按鈕 -->
+    <script>
+        let lightbox_2_el = document.getElementById("lightbox_2");
+
+        // 頁面上的按鈕
+        var header_navigation_sign_up= document.getElementsByClassName("header_navigation_sign_up")[0];
+        header_navigation_sign_up.addEventListener("click", function(){
+            lightbox_2_el.classList.remove("none");
+        });
+
+
+        var sign_in_close = document.getElementsByClassName("sign_in_close")[0];
+        sign_in_close.addEventListener("click", function(){
+            lightbox_2_el.classList.add("none");
+        });
+
+
+        lightbox_2_el.addEventListener("click", function(){
+            this.classList.add("none");
+        });
+
+        // 點擊 lightbox 中的白色區域，不會關掉 modal
+        lightbox_2_el.querySelector("article2").addEventListener("click", function(e){
+            e.stopPropagation();
+        });
+    </script>
+    <!-- 註冊按鈕end -->
+
+    <!-- 跳至最上方的按鈕 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:0}, 333);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300 ){
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
+    <!-- 跳至最上方的按鈕end -->
+</body>
+</html>

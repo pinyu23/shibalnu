@@ -1,0 +1,534 @@
+@import url("reset.css");
+*{
+    box-sizing: border-box;
+    font-family: Arial, '微軟正黑體';
+}
+
+body{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/bgi.png");
+    background-repeat: repeat;
+    /* background-size: cover; */
+}
+
+
+/* .bgi{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/bgi.png");
+    background-repeat: repeat;
+    background-size: cover;
+}  */
+
+
+a{
+    text-decoration: none;
+}
+
+
+/* 跳至最上方的按鈕 */
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #FFBD87;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #fff;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+/* 跳至最上方的按鈕end */
+
+
+/* 購物車按鈕 */
+/* #btn{
+  position: fixed;
+  top: 50%;
+  right: 0;
+  border:none;
+  background-color:transparent;
+  
+} */
+
+/* 購物車按鈕end */
+
+
+
+/* 登入按鈕 */
+
+button{
+  cursor: pointer;
+}
+
+#lightbox{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, .5);
+  z-index: 100;
+}
+
+  .none{
+    display: none;
+  }
+  
+/* #lightbox{
+  position: relative;
+  z-index: 100;
+} */
+
+#lightbox > article{
+  background-color: #F5EFE6;
+  width: 90%;
+  max-width: 830px;
+
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+  /* padding: 10px; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 2px solid black; */
+  display: flex;
+}
+  
+.login_logo2 img{
+  width: 200px;
+}
+
+.login_logo3 img{
+  width: 300px;
+  display: block;
+  margin: 35px auto;
+}
+  
+.log_in{
+  width: 830px;
+  height: 500px;
+  border-radius: 15px;
+  background-color: #F5EFE6;
+  /* border: 2px solid black; */
+  display: flex;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.log_in_left{
+  flex-grow: 1;
+  margin-left: 55px;
+}
+
+.log_in_right{
+  flex-grow: 2.5;
+  padding-left: 50px;
+  padding-top: 25px;
+  margin-left: 35px;
+}
+
+.log_in_left h2{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+  
+.log_in_contact{
+  margin-top: 35px;
+}
+
+.log_in_button1{
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #D9D9D9;
+}
+  
+.log_in_button2{
+  width: 145px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #E72D2D;
+  border: none;
+  color: white;
+}
+
+.log_in_button3{
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #004A8B;
+  border: none;
+  color: white;
+}
+  
+form{
+  margin-top: 30px;
+}
+
+.password{
+  margin-top: 30px;
+}
+
+.forget{
+  margin-top: 20px;
+}
+
+.forget a{
+  text-decoration: none;
+  color: #4A4A4A;
+}
+  
+  
+#username{
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+}
+
+#password{
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+}
+
+.log_in_close{
+  margin-left: 305px;
+  border: none;
+  background-color: #F5EFE6;
+}
+
+/* 登入按鈕end */
+
+
+
+
+/* 註冊按鈕 */
+
+button{
+  cursor: pointer;
+}
+
+#lightbox_2{
+/*   border: 1px solid red; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, .5);
+  z-index: 100;
+}
+
+.none{
+  display: none;
+}
+  
+/* 元素 article 置中及基本樣式 */
+/* #lightbox{
+  position: relative;
+  z-index: 100;
+} */
+
+#lightbox_2 > .sign_in{
+  background-color: #F5EFE6;
+  width: 90%;
+  max-width: 580px;
+  height: 780px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+  /* padding: 10px; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 2px solid black; */
+  display: flex;
+}
+
+.sign_in{
+  width: 580px;
+  height: 780px;
+  border-radius: 15px;
+  background-color: #F5EFE6;
+  /* border: 2px solid black; */
+  box-shadow: 0 0 10px #ddd;
+}
+
+.signin_logo2{
+    margin-top: 20px;
+}
+
+.sign_in h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.signin_logo2 img{
+    width: 200px;
+}
+
+.sign_in_close{
+  margin-left: 425px;
+  margin-top: 20px;
+  border: none;
+  background-color: #F5EFE6;
+}
+
+.sign_in_inner{
+    margin-left: 100px;
+}
+
+form{
+    margin-top: 40px;
+}
+
+form div{
+    margin-top: 15px;
+}
+
+.sign_up_button1{
+    margin-top: 10px;
+}
+
+#email,#username,#phone,#password,#password2{
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 250px;
+}
+
+.sign_in_button1{
+  width: 250px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #D9D9D9;
+}
+
+/* 註冊按鈕end */
+
+/* 導覽 */
+.page_header{
+  width: 100%;
+  display: flex;
+  background-color: #FFE9D8;
+  box-shadow: 0px 2px 3px rgba(48, 48, 48, 0.252);
+  margin-bottom: 50px;
+}
+
+.header_inner{
+  display:flex;
+  justify-content: space-between;
+  width: 1100px;
+  max-width: calc(1260px + 50px*2);
+  margin: 0 auto;
+}
+
+.header_logo img{
+  padding: 10px;
+  display: block;
+  height: 120px;
+}
+
+.header_navigation{
+  height: 120px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 900px;
+}
+
+.header_navigation_list{
+  margin-right: 27px;
+  margin-left: -17px;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header_navigation_list li{
+  border-bottom: 2px solid transparent;
+}
+
+.header_navigation_list li a{
+  display: block;
+  color: #5c5c5c;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.header_navigation_list li:hover a{
+  color: #b6b6b6;
+  border-bottom: 3px solid #b6b6b6;
+}
+
+.header_btn{
+  display: flex;
+  width: 18%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header_navigation_log_in{
+  border: 1px solid #FFBD87;
+  background-color: #FFBD87;
+  color: #5c5c5c;
+  border-radius: 10px;
+  padding: 10px 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.header_navigation_log_in:hover{
+  border: 1px solid #FFBD87;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.200);
+  color: white;
+}
+
+.header_navigation_log_in:active{
+padding: 12px 14px;
+}
+
+.header_navigation_sign_up{
+  padding: 10px 13px;
+  border: 1px solid #FFBD87;
+  border-radius: 10px;
+  background-color: #FFBD87;
+  color: #5c5c5c;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.header_navigation_sign-up:hover{
+  border: 1px solid #FFBD87;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.200);
+  color: white;
+}
+
+.header_navigation_sign_up:active{
+padding: 12px 14px;
+}
+/* 導覽end */
+
+
+/* 頁尾 */
+
+.footer{
+  min-width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  /* margin: 0 auto; */
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  background-color: #FFE9D8;
+  margin-top: 30px;
+}
+
+.footer_inner{
+  width: 1000px;
+  margin: 0 auto;
+  /* display: flex; */
+}
+
+.footer_logo img{
+  width: 200px;
+}
+
+.footer_inner .icon{
+  margin-left: 20px;
+}
+
+.footer_inner .contact{
+  color: #5c5c5c;
+  margin-left: 100px;
+}
+
+.footer_contact{
+  display: flex;
+  align-items: center;
+}
+
+.footer_logo{
+  flex-grow: 1;
+}
+
+.contact{
+  flex-grow: 1;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.contact_icon{
+  margin-left: 50px;
+  flex-grow: 1;
+}
+
+
+hr{
+  border: 1px solid #5c5c5c;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tibame{
+  text-align: center;
+  letter-spacing: 3px;
+  color: #5c5c5c;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.icon img:hover{
+  transform: scale(1.1);
+}
+
+/* 頁尾end */

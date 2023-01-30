@@ -1,0 +1,315 @@
+/* 輪播圖 */
+.swiper {
+    width: 1200px;
+    max-width: 80%;
+    /* height: 480px; */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.swiper-slide {
+  /* margin-top: 10px; */
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 倫播圖end */
+
+
+/* 主內容 */
+.main_bank_word{
+  text-align: center;
+  margin-top: 80px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #5c5c5c;
+}
+
+.home_bank{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.home_bank img{
+  width: 320px;
+  max-width: 24%;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition-duration: 1s;
+}
+
+.home_bank img:hover{
+  transform: scale(1.1);
+}
+
+.main_card_word{
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #5c5c5c;
+}
+
+.home_card{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.home_card_div{
+  background-color: white;
+  max-width: 20%;
+  opacity: 0.7;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.200);
+  border-radius: 0 30px 0 30px;
+}
+
+.home_card_div:hover{
+  opacity: 1;
+}
+
+.home_card img{
+  /* width: 320px; */
+  width: 90%;
+  /* max-width: 30%; */
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  border-radius: 0 30px 0 30px;
+  object-fit: cover;
+}
+
+.home_card img:hover{
+  transform: scale(1.03);
+}
+
+.home_card_div h2{
+  margin: 20px auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.home_card_div p{
+  margin: 10px auto;
+}
+
+.main_new_word{
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #5c5c5c;
+}
+
+
+.main_new .ticket{
+  margin-bottom: 30px;
+  /* text-align: center; */
+  position: relative;
+  margin: 0 auto;
+  width: 1146px;
+  max-width: 80%;
+}
+
+.main_new .ticket .ticket_inn{
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.ticket .ileo_h2{
+  position: absolute;
+  /* top: 100px;
+  left: 130px; */
+  top: 20%;
+  left: 10%;
+  text-align: left;
+  font-size: 24px;
+  /* font-size: 1.5vw; */
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.ticket .ileo_p{
+  position: absolute;
+  /* top: 200px;
+  left: 130px; */
+  top: 44%;
+  left: 10%;
+  text-align: left;
+  font-size: 16px;
+  /* font-size: .9vw; */
+  font-weight: 600;
+  /* letter-spacing: 2px; */
+  line-height: 1.9;
+}
+
+.ticket .bankee_h2{
+  position: absolute;
+  /* top: 100px;
+  left: 130px; */
+  top: 20%;
+  left: 10%;
+  text-align: left;
+  font-size: 24px;
+  /* font-size: 1.5vw; */
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.ticket .img02{
+  position: absolute;
+  /* top: 155px;
+  left: 858px; */
+  top: 40%;
+  left: 75%;
+  width: 20%;
+}
+
+.ticket .img03{
+  position: absolute;
+  top: 54%;
+  left: 73%;
+  width: 25%;
+}
+
+.ticket .img04{
+  position: absolute;
+  top: 31%;
+  left: 1%;
+  width: 25%;
+}
+
+.ticket .bankee_p{
+  position: absolute;
+  /* top: 200px;
+  left: 130px; */
+  top: 42%;
+  left: 10%;
+  text-align: left;
+  font-size: 16px;
+  /* font-size: .9vw; */
+  font-weight: 600;
+  /* letter-spacing: 2px; */
+  line-height: 1.9;
+}
+
+.main_tip_word{
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #5c5c5c;
+}
+
+.main_tip .ticket{
+  margin-bottom: 30px;
+  position: relative;
+  margin: 0 auto;
+  width: 1146px;
+  max-width: 80%;
+}
+
+.ticket .tip01_h2{
+  position: absolute;
+  /* top: 100px;
+  left: 130px; */
+  top: 20%;
+  left: 34%;
+  text-align: left;
+  font-size: 24px;
+  /* font-size: 1.5vw; */
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.ticket .tip01_p{
+  position: absolute;
+  /* top: 200px;
+  left: 130px; */
+  top: 50%;
+  left: 34%;
+  text-align: left;
+  font-size: 16px;
+  /* font-size: .9vw; */
+  font-weight: 600;
+  /* letter-spacing: 2px; */
+  line-height: 1.9;
+}
+
+.ticket .tip02_h2{
+  position: absolute;
+  /* top: 100px;
+  left: 130px; */
+  top: 20%;
+  left: 34%;
+  text-align: left;
+  font-size: 24px;
+  /* font-size: 1.5vw; */
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.ticket .tip02_p{
+  position: absolute;
+  /* top: 200px;
+  left: 130px; */
+  top: 50%;
+  left: 34%;
+  text-align: left;
+  font-size: 16px;
+  /* font-size: .9vw; */
+  font-weight: 600;
+  /* letter-spacing: 2px; */
+  line-height: 1.9;
+}
+
+.ticket .img05{
+  position: absolute;
+  top: 31%;
+  left: 3%;
+  width: 21%;
+}
+
+.main_tip .ticket .ticket_inn{
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+}
+/* 主內容end*/
+
+  

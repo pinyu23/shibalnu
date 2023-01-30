@@ -1,0 +1,153 @@
+.tab-content-1 div,
+.tab-content-2 div,
+.tab-content-3 div{
+    margin: 6px;
+}
+  
+  
+#tab {
+    width: 60%;
+    background: #FFF2D8;
+    border: solid 20px #FFF2D8;
+    border-top: solid 10px #FFF2D8;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgb(48 48 48 / 25%);
+}
+  
+/* 頁籤ul */
+#tab > ul {
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 10px 20px 0 20px;
+}
+
+#tab > ul > li {
+    list-style-type: none;
+}
+
+/* 頁籤上的文字 */
+#tab > ul > li > a { 
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    float: left;
+    padding: 10px;
+    margin-left: 5px;
+    letter-spacing: 3px;
+}
+
+#tab > ul > li > a:hover{
+    color: #999999;
+}
+
+
+/*頁籤div內容*/
+#tab > div {
+    clear: both;
+    padding: 0 15px;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/*第一筆的底色*/
+span:target ~ #tab > ul li:first-child a {
+    background: #FFF2D8;
+}
+
+
+span:target ~ #tab > div:first-of-type {
+    visibility: hidden;
+    height: 0;
+    padding: 0 15px; 
+}
+
+/*頁籤變換&第一筆*/
+span ~ #tab > ul li:first-child a,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"],
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"],
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"]{
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+span ~ #tab > ul li:first-child a::before,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"]::before,
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"]::before,
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"]::before{
+    background-color: white;
+    height: 100%;
+}
+
+/*頁籤內容顯示&第一筆*/
+span ~ #tab > div:first-of-type,
+#tab-1:target ~ #tab > div.tab-content-1,
+#tab-2:target ~ #tab > div.tab-content-2,
+#tab-3:target ~ #tab > div.tab-content-3{
+    visibility: visible;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+}
+
+span {
+    display: none;
+}
+  
+
+#tab{
+margin: 50px auto;
+}
+
+.bookall{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bookall .book{
+    display: block;
+    margin: 0 auto;
+}
+
+.bookall .book:hover{
+    opacity: .5;
+}
+
+.bookall .heart{
+    vertical-align: middle;
+}
+
+.word_contact{
+    text-align: center;
+}
+
+.single{
+    flex-grow: 1;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.buy{
+    display: inline-block;
+    background-color: #5c5c5c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buy a{
+    color: white;
+}
+
+
+.inner{
+    margin: 5px;
+}
+
+.word_contact p{
+    /* margin-bottom: 50px; */
+    margin-bottom: 20%;
+}

@@ -1,0 +1,188 @@
+/* 主內容 */
+.new_word{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #5c5c5c;
+  margin-top: 60px;
+}
+
+
+.new_word::after {
+  content: url(images/dot2.png);
+  padding: 0px 0px 5px 5px;
+}
+
+.new_word::before {
+  content: url(images/dot1.png);
+  padding: 0px 5px 5px 5px;
+}
+
+.new_top{
+  display: flex;
+  justify-content: center;
+}
+
+.newpic_bg{
+  position: relative;
+  background-image: url("images/newpic_bg.png");
+  width: 194px;
+  height: 164px;
+  margin: 10px;
+  margin-top: 50px;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+}
+
+.newpic_bg:hover{
+  transform: translateY(-10px);
+}
+
+.newpic_bg img{
+  position: absolute;
+  top: 54px;
+  left: 14px;
+}
+
+.new_date{
+  width: 385px;
+  /* height: 36px; */
+  background-color: #FFE9C0;
+  padding: 10px 15px;
+  border-radius: 0 18px 18px 0;
+}
+
+
+.new_contact_word{
+  max-width: 100%;
+  background-color: #E2E2E2;
+  padding: 15px;
+  border-radius:0 10px 10px 0;
+  color: #5c5c5c;
+}
+
+.new_contact_word h2{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 2;
+}
+
+.new_contact_word p{
+  font-size: 18px;
+  line-height: 2;
+}
+
+.new_contact{
+  max-width: 917px;
+  margin: 40px auto;
+  letter-spacing: 1.4px;
+}
+
+main{
+  position: relative;
+}
+
+.foot_print1{
+  position: absolute;
+  top: 50%;
+  left: 76%;
+  transform: rotate(-20deg);
+}
+
+
+.foot_print2{
+  position: absolute;
+  top: 45%;
+  left: 74%;
+  transform: rotate(-40deg);
+}
+
+
+.foot_print3{
+  position: absolute;
+  top: 39%;
+  left: 75%;
+  transform: rotate(10deg);
+}
+
+.foot_print4{
+  position: absolute;
+  top: 33%;
+  left: 77%;
+  transform: rotate(45deg);
+}
+
+.foot_print5{
+  position: absolute;
+  top: 28%;
+  left: 75%;
+  transform: rotate(-40deg);
+}
+
+.foot_print6{
+  position: absolute;
+  top: 23%;
+  left: 77%;
+  transform: rotate(30deg);
+}
+
+
+.lightset1 img{
+  position: absolute;
+  top: 1300px;
+  left: 400px;
+  animation-name: lightset1;
+  animation-duration: 6s;
+  transform-origin: left bottom;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lightset1{
+  0%{
+    transform: rotate(-15deg);
+  }
+  25%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(15deg);
+  }
+  75%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-15deg);
+  }
+}
+
+
+.lightset2 img{
+  position: absolute;
+  top:1300px;
+  left: 1200px;
+  animation-name: lightset2;
+  animation-duration: 6s;
+  transform-origin: right bottom;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lightset2{
+  0%{
+    transform: rotate(15deg);
+  }
+  25%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-15deg);
+  }
+  75%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(15deg);
+  }
+}
+

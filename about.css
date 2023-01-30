@@ -1,0 +1,318 @@
+/* 主內容 */
+.about_word{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #5c5c5c;
+  margin-top: 60px;
+}
+
+.about_word::before {
+  content: url(images/dot1.png);
+  padding: 0px 5px 5px 5px;
+}
+
+.about_word::after {
+  content: url(images/dot2.png);
+  padding: 0px 0px 5px 5px;
+}
+
+.logo_shadow img{
+  margin: 0;
+}
+
+
+.about_img img{
+  max-width: 40%;
+  display: block;
+  margin: 1% auto;
+}
+
+
+.about_img .logo_jump{
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 1.5%;
+  animation-name: jump;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-duration: normal;
+  animation-fill-mode: none;
+}
+
+@keyframes jump{
+  0%{
+    top: 50px;
+  }
+  10%{
+    top: 40px;
+  }
+  20%{
+    top: 30px;
+  }
+  30%{
+    top: 20px;
+  }
+  40%{
+    top: 10px;
+  }
+  50%{
+    top: 0px;
+  }
+  60%{
+    top: 15px;
+  }
+  75%{
+    top: 30px;
+  }
+  90%{
+    top: 40px;
+  }
+  100%{
+    top: 50px;
+  }
+}
+
+
+
+
+
+
+.about_img .logo_shadow{
+  position: relative;
+  margin-top: 3%;
+
+  z-index: -1;
+  /* width: 226px; */
+
+  animation-name: logo_shadow;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-duration: normal;
+  animation-fill-mode: none;
+}
+
+@keyframes logo_shadow{
+  0%{
+    scale: .75;
+  }
+  10%{
+    scale: .8;
+  }
+  20%{
+    scale: .85;
+  }
+  30%{
+    scale: .9;
+  }
+  40%{
+    scale: .95;
+  }
+  50%{
+    scale: 1;
+  }
+  60%{
+    scale: .90;
+  }
+  75%{
+    scale: 0.85;
+  }
+  90%{
+    scale: 0.80;
+  }
+  100%{
+    scale: .75;
+  }
+}
+
+
+
+
+.about_contact{
+  display: flex;
+  justify-content: center;
+  line-height: 1.5;
+  margin-top: 50px;
+}
+
+.about_contact1{
+  align-self: center;
+  max-width: 30%;
+  /* margin-left: 5%; */
+  margin-right: 5%;
+  font-size: 18px;
+}
+
+.about_contact2{
+  align-self: center;
+  max-width: 30%;
+  font-size: 18px;
+}
+
+.about_contact2_1{
+  margin-bottom: 5%;
+  border-bottom: 3px solid #FFBD88;
+  padding-bottom: 10px;
+}
+
+.about_contact2_2{
+  border-bottom: 3px solid #FFBD88;
+  padding-bottom: 10px;
+}
+
+
+
+.arrow{
+  text-align: center;
+  margin-top: 4%;
+}
+
+.about_banner{
+  text-align: center;
+
+  margin-top: 5%;
+}
+
+/* 主內容end */
+
+/* 常見問題 */
+
+.q_a {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #5c5c5c;
+  margin-bottom: 30px;
+}
+
+.q_a::before {
+  content: url(images/dot1.png);
+  padding: 0px 5px 5px 5px;
+}
+
+.q_a::after {
+  content: url(images/dot2.png);
+  padding: 0px 0px 5px 5px;
+}
+
+
+/* 設定分頁的寬度，將頂部和底部的邊距設定90px，左右邊距設定為auto */
+
+.accordion {
+  /* width: 800px; */
+  max-width: 70%;
+  margin: 90px auto;
+  color: black;
+  /* background-color: white; */
+  padding: 45px 45px;
+}
+
+.accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+
+/* 相對於.container 定位tag，在頂部和底部加上高度並增加字體大小 */
+
+.accordion .label {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  /* padding: 30px 155px; */
+  color: black;
+  background-color: #FFBD88;
+  cursor: pointer;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+
+/* 將加號放在距離右側5px的位置，使用transform將其居中 */
+
+.accordion .label::before {
+  content: url("images/add.png");
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: 34px;
+  transform: translateY(-50%);
+}
+
+
+/* 隱藏內如容(高度為0)，減小字體大小，對齊文字並加上過度 */
+
+.accordion .content {
+  display: flex;
+  position: relative;
+  background: #FFE1AB;
+  height: 0;
+  border-radius: 10px;
+  text-align: justify;
+  max-width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 10px;
+  /* margin-right: 5px; */
+  padding: auto;
+  word-break: break-all;
+  /* padding-left: 155px;
+  padding-right: 30px; */
+}
+
+.accordion .label:hover{
+  background-color: #FFE1AB;
+}
+
+.content_word{
+  margin: 3%;
+  line-height: 1.5;
+}
+
+.label div{
+  margin: 3%;
+  padding: auto;
+}
+
+.foot{
+  margin: auto 0 auto 3%;
+  width: 45px;
+}
+
+.accordion .content img{
+  display: block;
+  margin: auto 0 auto 3%;
+  width: 45px;
+  height: 60%;
+}  
+
+/* 內容間有水平線 */
+
+/* .accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+} */
+
+
+/* 活動時取消隱藏內容的部分。設定高度 */
+
+.accordion .container.active .content {
+  height: auto;
+}
+
+/* 加號變負號 */
+
+.accordion .container.active .label::before {
+  content: url("images/sub.png");
+}
+
+/* 常見問題end */
+
+  

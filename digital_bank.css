@@ -1,0 +1,189 @@
+.main_digital_bank{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #5c5c5c;
+}
+
+.main_digital_bank::before {
+    content: url("images/dot1.png");
+    padding: 0px 5px 5px 5px;
+}
+
+.main_digital_bank::after {
+    content: url("images/dot2.png");
+    padding: 0px 0px 5px 5px;
+}
+
+
+.wrapper1{
+    /* width: 1300px; */
+    width: 67%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.wrapper1 .bank_card{
+    background-color: #FFF0D2;
+    border: 1px solid #E39940;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.200);
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.horizontal img{
+    display: block;
+    /* width: 350px; */
+    width: 80%;
+    margin: 10px auto;
+}
+
+/* .horizontal{
+    width: 10%;
+    height: 1000px;
+
+} */
+
+
+
+.wrapper1 .digital_bank_contact h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.wrapper1 .digital_bank_contact p{
+    margin-left: 40px;
+}
+
+.wrapper1 .digital_bank_contact a{
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+
+a.detail01{
+    border: 1px solid #FFBC86;
+    color: #FFBC86;
+    background-color: #fff;
+}
+
+a.join01{
+    border: 1px solid #FFBC86;
+    color: #fff;
+    background-color: #FFBC86;
+}
+
+a.detail01:hover{
+    border: 1px solid #FFBC86;
+    color: #fff;
+    background-color: #FFBC86;
+}
+
+a.join01:hover{
+    border: 1px solid #FFBC86;
+    color: #FFBC86;
+    background-color: #fff;
+}
+
+
+.verical{
+    /* width: 600px; */
+    height: 400px;
+
+}
+/* .verical img{
+    height: 360px;                                                                                                                                                                                             
+} */
+
+
+
+.wrapper2 .bank_card{
+    display: flex;
+    background-color: #FFF0D2;
+    border: 1px solid #E39940;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.200);
+    /* flex-basis: 400px; */
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.wrapper2 img{
+    display: block;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.wrapper2 .digital_bank_contact{
+    margin-top: 80px;
+    
+    flex-grow: 1;
+}
+
+
+.wrapper2 h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.wrapper2 p{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+.wrapper2 .digital_bank_contact a{
+    display: block;
+    width: 280px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+a.detail02{
+    border: 1px solid #FFBC86;
+    color: #FFBC86;
+    background-color: #fff;
+}
+
+a.join02{
+    border: 1px solid #FFBC86;
+    color: #fff;
+    background-color: #FFBC86;
+}
+
+a.detail02:hover{
+    border: 1px solid #FFBC86;
+    color: #fff;
+    background-color: #FFBC86;
+}
+
+a.join02:hover{
+    border: 1px solid #FFBC86;
+    color: #FFBC86;
+    background-color: #fff;
+}
+
+.wrapper2{
+    /* width: 1300px; */
+    width: 67%;
+    margin-top: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

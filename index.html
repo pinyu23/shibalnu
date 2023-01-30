@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理柴‧理財shibalnu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div>
+        <!-- <a href=""><img class="shoppingicon" src="images/shoppingicon.png" alt=""></a> -->
+        <!-- 購物車按鈕 -->
+        <!-- <button id="btn" type="button"><img src="images/shoppingicon.png" alt=""></button> -->
+        <!-- 購物車按鈕end -->
+
+
+        <!-- 登入按鈕 -->
+        <div id="lightbox" class="none">
+            <article>
+              <div class="log_in_left">
+                  <h2>會員登入</h2>
+                  <div class="login_logo3"><img src="images/logo_3.png" alt=""></div>
+              </div>
+              <div class="log_in_right">
+                  <button class="log_in_close" type="button"><img src="images/fork.png" alt=""></button>
+                  <div class="log_in_contact">
+                      <div class="login_logo2"><img src="images/logo_2.png" alt=""></div>
+                      <form action="#" method="">
+                          <div class="username">
+                              <label for="username">帳號:</label>
+                              <input type="text" placeholder=" 請輸入帳號" id="username" autocomplete="off">
+                          </div>
+                          <div class="password">
+                              <label for="password">密碼:</label>
+                              <input type="password" placeholder=" 請輸入密碼" id="password" autocomplete="off">
+                          </div>
+                          <div>
+                              <button class="log_in_button1" type="button">登入</button>
+                          </div>
+                          <div>
+                              <button class="log_in_button2" type="button">使用Google登入</button>
+                              <button class="log_in_button3" type="button">使用Facebook登入</button>
+                          </div>
+                      </form>
+                      <p class="forget"><a href="">忘記密碼請點我</a></p>
+                  </div>
+              </div>
+            </article>
+        </div>
+        <!-- 登入按鈕end -->
+
+        <!-- 註冊按鈕 -->
+        <div id="lightbox_2" class="none">
+            <article2 class="sign_in">
+                <div class="sign_in_inner">
+                    <button class="sign_in_close" type="button"><img src="images/fork.png" alt=""></button>
+                    <div class="sign_in_contact">
+                        <div class="signin_logo2"><img src="images/logo_2.png" alt=""></div>
+                        <h2>會員註冊</h2>
+                        <form action="#" method="">
+                            <div class="email">
+                                <label for="username">電子郵件地址:</label>
+                                <br>
+                                <input type="text" placeholder=" e.g. abc123@gmaail.com" id="email" autocomplete="off">
+                            </div>
+                            <div class="username">
+                                <label for="username">帳號:</label>
+                                <br>
+                                <input type="text" placeholder=" 請輸入8~16英文及數字" id="username" autocomplete="off">
+                            </div>
+                            <div class="phone">
+                                <label for="username">手機號碼:</label>
+                                <br>
+                                <input type="text" placeholder=" e.g. 0911123456" id="phone" autocomplete="off">
+                            </div>
+                            <div class="password">
+                                <label for="password">密碼:</label>
+                                <br>
+                                <input type="password" placeholder=" 請輸入8~16英文及數字" id="password" autocomplete="off">
+                            </div>
+                            <div class="passwords">
+                                <label for="password">確認密碼:</label>
+                                <br>
+                                <input type="password" placeholder=" 請再次輸入密碼" id="password2" autocomplete="off">
+                            </div>
+                            <div class="newspaper">
+                                <input type="checkbox">
+                                <label>我願意收到理柴理財的電子報</label>
+                            </div>
+                            <div class="agree">
+                                <input type="checkbox">
+                                <label><a href="">我已同意並閱讀隱私權保護政策</a></label>
+                            </div>
+                            <div class="sign_up_button1">
+                                <button class="sign_in_button1" type="button">註冊</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article2>
+        </div>
+
+
+        
+        <!-- 註冊按鈕end -->
+
+
+
+
+
+        <!-------導覽列-------->
+        <header class="page_header dropdowns">
+            <div class="header_inner">
+                <a href="index.html" class="header_logo">
+                    <img src="images/logo_1.png" alt="">
+                </a>
+                <div class="header_nav">
+                    <nav>
+
+
+                        <!-------選單-------->
+                        <ul class="header_navigation_list">
+                            <li class="header_navigation_item">
+                                <a href="new.html">最新消息</a></li>
+                            <li class="header_navigation_item">
+                                <a href="digital_bank.html">數位銀行</a></li>
+                            <li class="header_navigation_item">
+                                <a href="credit_card.html">信用卡</a></li>
+                            <li class="header_navigation_item">
+                                <a href="financial.html">理財攻略</a></li>
+                            <li class="header_navigation_item">
+                                <a href="about.html">關於我們</a></li>
+                            <li class="header_navigation_item">
+                                <a href="shopping.html">購書專區</a></li>
+                        </ul>
+                        <!-------選單end-------->
+
+
+                        <!-------登入/註冊區-------->
+                        <div class="header_btn">
+                            <button class="header_navigation_log_in">登入</button>
+                            <button class="header_navigation_sign_up">註冊</button>
+                        </div>
+                        <!-------登入/註冊區end-------->
+
+
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-------導覽列end-------->
+
+        <!-- 主內容 -->
+        <main>
+
+
+            <!-------倫播圖-------->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div data-hash="slide1" class="swiper-slide"><img src="images/home_banner_1.png" alt=""></div>
+                  <div data-hash="slide2" class="swiper-slide"><img src="images/home_banner_2.png" alt=""></div>
+                  <div data-hash="slide3" class="swiper-slide"><img src="images/home_banner_3.png" alt=""></div>
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-------倫播圖end-------->
+
+
+            <!-------數位銀行-------->
+            <div class="main_bank">
+                <div class="main_bank_word">—數位銀行—</div>
+                <div class="home_bank">
+                    <img src="images/richart_bank.png" alt="">
+                    <img src="images/ileo.png" alt="">
+                    <img src="images/rakuten.png" alt="">
+                </div>
+            </div>
+            <!-------數位銀行end-------->
+
+
+            <!-------信用卡-------->
+            <div class="main_card">
+                <div class="main_card_word">—信用卡—</div>
+                <div class="home_card">
+                    <div class="home_card_div">
+                        <img src="images/cube.png" alt="">
+                        <h2>國泰cube卡</h2>
+                        <p>想要的回饋就在CUBE卡</p>
+                    </div>
+                    <div class="home_card_div">
+                        <img src="images/jcard.png" alt="">
+                        <h2>富邦j卡</h2>
+                        <p>無腦卡神搞定所有消費</p>
+                    </div>
+                    <div class="home_card_div">
+                        <img src="images/sport.png" alt="">
+                        <h2>永豐SPORT卡</h2>
+                        <p>運動賺回饋，汗水不白流!</p>
+                    </div>
+                </div>
+            </div>
+            <!-------信用卡end-------->
+
+
+            <!-------最新消息-------->
+            <div class="main_new">
+                <div class="main_new_word">—最新消息—</div>
+                <div data-aos="fade-left" class="ticket">
+                    <img class="ticket_inn" src="images/ticket.png" alt="">
+                    <h2 class="ileo_h2">ILEO數位銀行<br>
+                        活動期間 2023/01/01~2023/12/31</h2>
+                    <p class="ileo_p">近期第一銀行iLEO將台幣優惠活存利率提高為2%，<br>
+                        並且官網公告活動會延續至2023年底。<br>
+                        和其他銀行數位帳戶比較下，iLEO活存利率目前在數位帳戶排名有在前10名，<br>
+                        而且不需要達成特定任務，可以直接取得2%優惠存款利率。<br>
+                        如果是以高活存利率為考量的人，可以將第一銀iLeo數位帳戶納入考慮名單中。</p>
+                    <img class="img02" src="images/ileo_icon2.png" alt="">
+                </div>
+                <div data-aos="fade-left" class="ticket">
+                    <img class="ticket_inn"  src="images/ticket.png" alt="">
+                    <h2 class="bankee_h2">Bankee數位銀行<br>
+                        活動期間 2023/01/01~2023/3/31</h2>
+                    <p class="bankee_p">
+                        新戶 : <br>
+                        即日起至2023/03/31前透過推薦碼申請Bankee數位帳戶且開戶完成，<br>
+                        可於次月21日享有 6 個月 NT$50,000元內(含) 2.6% 優惠利率。<br>
+                        舊戶 : <br>
+                        於2023/03/31前成功邀請好友申辦Bankee數位帳戶且完成開戶，<br>
+                        推薦者與被推薦者均享有次月 21 日享有 6 個月NT$50,000元內(含) 2.6% 優惠利率。</p>
+                    <img class="img03" src="images/bankee_icon1.png" alt="">
+                </div>
+                </div>
+            </div>
+            <!-------最新消息end-------->
+
+
+            <!-------儲蓄攻略-------->
+            <div class="main_tip">
+                <div class="main_tip_word">—儲蓄攻略—</div>
+                <div data-aos="fade-right" class="ticket">
+                    <img class="ticket_inn" src="images/ticket2.png" alt="">
+                    <h2 class="tip01_h2">如何做好理財規劃6步驟帶你完成理財規劃，<br>
+                        這步絕不能忽略</h2>
+                    <p class="tip01_p">
+                        你知道嗎？<br>
+                        財富的累積和你是否做好理財和投資規劃是有強烈的正相關的，<br>
+                        「你不理財，才不理你」這句話是確實的。<br>
+                        但是理財並不是拼命存錢就好，那究竟應該要如何做好理財規劃？</p>
+                    <img class="img04" src="images/bank_icon.png" alt="">
+                </div>
+                <div data-aos="fade-right" class="ticket">
+                    <img class="ticket_inn" src="images/ticket2.png" alt="">
+                    <h2 class="tip02_h2">Elaine理白小姐<br>
+                        99%的被動收入是騙人的！<br>千萬別當肥羊還幫忙數錢！</h2>
+                    <p class="tip02_p">
+                        誤以為是不動收入<br>
+                        誤以為熟悉的產業就十拿九穩<br>
+                        誤以為真的沒有被動收入<br>
+                        學習一項技能，或把本業做到淋漓盡致才是根本之道！
+                    </p>
+                    <img class="img05" src="images/coin.png" alt="">
+                </div>
+            </div>
+            <!-------儲蓄攻略end-------->
+
+
+        </main>
+        <!-- 主內容end -->
+
+        <!-------頁尾-------->
+        <footer>
+            <div class="footer">
+                <div class="footer_inner">
+                    <div class="footer_contact">
+                        <div><a class="footer_logo" href="index.html"><img src="images/logo_2.png" alt=""></a></div>
+                        <div class="contact">
+                            -聯絡我們- <br>
+                            <br>
+                            專線 : 0800-123-456 <br>
+                            信箱 : abc123456@shibaInu.com <br>
+                            營業時間 : 週一 ~ 週五   8 : 00 ~ 17 : 00
+                        </div>
+                        <div class="contact_icon">
+                            <a class="icon" href=""><img src="images/instagram.png" alt=""></a>
+                            <a class="icon" href=""><img src="images/youtube.png" alt=""></a>
+                            <a class="icon" href=""><img src="images/facebook.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div><hr></div>
+                    <div class="tibame">本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。
+                        <br>
+                        參考資源: 理享人生、李勛、理白小姐、瑞絲投資理財、信用卡社、股感。<br>2023 © All rights reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-------頁尾end-------->
+
+
+
+        <!-- 跳至最上方的按鈕 -->
+        <button type="button" id="BackTop" class="toTop-arrow"></button>
+        <!-- 跳至最上方的按鈕end -->
+
+
+    </div>
+
+
+
+    <!-- js開始 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- 倫播圖js -->
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          hashNavigation: {
+            watchState: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+          },
+        });
+    </script>
+    <!-- 倫播圖js   end -->
+
+
+    <!-- 登入按鈕 -->
+    <script>
+        let lightbox_el = document.getElementById("lightbox");
+
+        // 頁面上的按鈕
+        var header_navigation_log_in= document.getElementsByClassName("header_navigation_log_in")[0];
+        header_navigation_log_in.addEventListener("click", function(){
+            lightbox_el.classList.remove("none");
+         });
+
+
+        var log_in_close = document.getElementsByClassName("log_in_close")[0];
+        log_in_close.addEventListener("click", function(){
+            lightbox_el.classList.add("none");
+        });
+
+
+        lightbox_el.addEventListener("click", function(){
+            this.classList.add("none");
+        });
+
+        // 點擊 lightbox 中的白色區域，不會關掉 modal
+        lightbox_el.querySelector("article").addEventListener("click", function(e){
+            e.stopPropagation();
+        });
+    </script>
+    <!-- 登入按鈕end -->
+
+
+
+    <!-- 註冊按鈕 -->
+    <script>
+        let lightbox_2_el = document.getElementById("lightbox_2");
+
+        // 頁面上的按鈕
+        var header_navigation_sign_up= document.getElementsByClassName("header_navigation_sign_up")[0];
+        header_navigation_sign_up.addEventListener("click", function(){
+            lightbox_2_el.classList.remove("none");
+        });
+
+
+        var sign_in_close = document.getElementsByClassName("sign_in_close")[0];
+        sign_in_close.addEventListener("click", function(){
+            lightbox_2_el.classList.add("none");
+        });
+
+
+        lightbox_2_el.addEventListener("click", function(){
+            this.classList.add("none");
+        });
+
+        // 點擊 lightbox 中的白色區域，不會關掉 modal
+        lightbox_2_el.querySelector("article2").addEventListener("click", function(e){
+            e.stopPropagation();
+        });
+    </script>
+    <!-- 註冊按鈕end -->
+
+
+    <!-- 購物車警告 -->
+    <!-- <script>
+        var my_btn = document.getElementById("btn");
+        my_btn.addEventListener("click", function(){
+            alert("您好!請先登入，謝謝!");
+        });
+    </script> -->
+    <!-- 購物車警告end -->
+
+
+
+    <!-- 跳至最上方的按鈕 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+        $(function(){
+	        $('#BackTop').click(function(){ 
+		        $('html,body').animate({scrollTop:0}, 333);
+	        });
+	    $(window).scroll(function() {
+		    if ( $(this).scrollTop() > 300 ){
+			    $('#BackTop').fadeIn(222);
+		    } else {
+			    $('#BackTop').stop().fadeOut(222);
+		    }
+	        }).scroll();
+        });
+    </script>
+    <!-- 跳至最上方的按鈕end -->
+
+
+</body>
+</html>

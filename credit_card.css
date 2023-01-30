@@ -1,0 +1,163 @@
+.card_word{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #5c5c5c;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+
+.card_word::after {
+  content: url(images/dot2.png);
+  padding: 0px 0px 5px 5px;
+}
+
+.card_word::before {
+  content: url(images/dot1.png);
+  padding: 0px 5px 5px 5px;
+}
+
+.flame{
+  font-size: 24px;
+  font-weight: 600;
+  color: #5c5c5c;
+  display: block;
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.flame img{
+  width: 36px;
+}
+
+.card_top{
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  /* outline: 5px solid white; */
+  display: flex;
+}
+
+.card_top li{
+  background-size: cover;
+  background-position: center center;
+  transition: .5s;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card_item01 {
+  background-image: url("images/card_item01.png");
+  flex-grow: 2;
+}
+
+.card_item02 {
+  background-image: url("images/card_item02.png");
+  flex-grow: 2;
+}
+
+.card_item03 {
+  background-image: url("images/card_item03.png");
+  flex-grow: 2;
+}
+
+.card_item03:hover{
+  border-radius: 20px;
+  background-image: url("images/card_item03_b.png")
+  
+}
+
+
+.card_item02:hover{
+  border-radius: 20px;
+  background-image: url("images/card_item02_b.png")
+}
+
+
+.card_item01:hover{
+  border-radius: 20px;
+  background-image: url("images/card_item01_b.png")
+}
+
+.card_top li:hover{
+  flex-grow: 3;
+  ;
+}
+
+
+.credit_card{
+  width: 1000px;
+  margin: 80px auto;
+}
+
+
+.card_word01{
+  color: #5c5c5c;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-left: 10px solid #D9D9D9;
+  padding: 8px 0 8px 5px;
+}
+
+
+.card_word01:hover{
+  text-decoration: underline;
+}
+
+
+.card01{
+  width: 800px;
+}
+
+.card_tag01,
+.card_tag02{
+  display: inline-block;
+  margin: 0 0 20px 40px;
+  font-size: 20px;
+  padding: 10px 15px 10px 10px;
+  background-color: #D9D9D9;
+  border-radius: 30px;
+  color: white;
+}
+
+.card_tag02{
+  margin: 0 0 20px 20px;
+}
+
+.card_tag01:hover,
+.card_tag02:hover{
+
+  box-shadow: 0px 2px 3px rgba(48, 48, 48, 0.252);
+}
+
+.card_contact01{
+  display: flex;
+}
+
+
+.card_contact_word01{
+  margin-left: 25px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+
+.read_more{
+  font-size: 20px;
+  display: block;
+  width: 1000px;
+  margin: 20px auto;
+  text-align: right;
+  
+}
+
+.read_more a{
+  background-color: #D9D9D9;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}

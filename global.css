@@ -127,9 +127,9 @@ button{
 }
 
 .login_logo3 img{
-  width: 300px;
+  width: 224px;
   display: block;
-  margin: 35px auto;
+  margin: 62px auto;
 }
   
 .log_in{
@@ -144,14 +144,14 @@ button{
 
 .log_in_left{
   flex-grow: 1;
-  margin-left: 55px;
+  margin-left: 125px;
 }
 
 .log_in_right{
   flex-grow: 2.5;
-  padding-left: 50px;
+  padding-left: 73px;
   padding-top: 25px;
-  margin-left: 35px;
+  margin-left: 43px;
 }
 
 .log_in_left h2{

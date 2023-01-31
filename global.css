@@ -218,6 +218,7 @@ form{
   border-radius: 5px;
   height: 30px;
   width: 200px;
+  text-indent: 10px;
 }
 
 #password{
@@ -225,6 +226,7 @@ form{
   border-radius: 5px;
   height: 30px;
   width: 200px;
+  text-indent: 10px;
 }
 
 .log_in_close{
@@ -333,6 +335,7 @@ form div{
   border-radius: 5px;
   height: 40px;
   width: 250px;
+  text-indent: 10px;
 }
 
 .sign_in_button1{

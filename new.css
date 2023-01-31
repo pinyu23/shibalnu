@@ -7,6 +7,10 @@
   margin-top: 60px;
 }
 
+.header_navigation_item .nav_new{
+  color: #b6b6b6;
+  /* border-bottom: 3px solid #b6b6b6; */
+}
 
 .new_word::after {
   content: url(images/dot2.png);

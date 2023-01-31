@@ -134,9 +134,13 @@ h3{
 
 .buy{
     display: inline-block;
-    background-color: #5c5c5c;
+    background-color: #FFBC86;
     padding: 10px;
     border-radius: 5px;
+}
+
+.buy:hover{
+    box-shadow: 1px 2px 5px rgb(48 48 48 / 25%);
 }
 
 a .buy{

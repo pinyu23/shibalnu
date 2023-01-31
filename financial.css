@@ -184,9 +184,9 @@ main{
 }
 
 .fin_btn1{
-    background-color: #5C5C5C;
+    background-color: #FFD58E;
     padding: 10px;
-    color: white;
+    color: #5C5C5C;
     border-radius: 5px;
 }
 
@@ -199,7 +199,8 @@ main{
 }
 
 .fin_btn1:hover{
-    color: #E5D4BA;
+    /* color: #E5D4BA; */
+    color: white;
 }
 
 .fin_btn2:hover{

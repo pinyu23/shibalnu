@@ -183,6 +183,10 @@
   margin-top: 5%;
 }
 
+.about_banner img{
+  max-width: 80%;
+}
+
 /* 主內容end */
 
 /* 常見問題 */
@@ -247,7 +251,7 @@
   color: black;
   position: absolute;
   top: 50%;
-  right: 34px;
+  right: 5%;
   transform: translateY(-50%);
 }
 

@@ -405,8 +405,8 @@ nav{
 }
 
 .header_navigation_list{
-  margin-right: 27px;
-  margin-left: -17px;
+  /* margin-right: 27px;
+  margin-left: -17px; */
   display: flex;
   width: 70%;
   align-items: center;

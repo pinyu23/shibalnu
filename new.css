@@ -5,6 +5,7 @@
   font-weight: 600;
   color: #5c5c5c;
   margin-top: 60px;
+  margin-bottom: 50px;
 }
 
 .header_navigation_item .nav_new{
@@ -25,15 +26,16 @@
 .new_top{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .newpic_bg{
   position: relative;
   background-image: url("images/newpic_bg.png");
-  width: 194px;
-  height: 164px;
-  margin: 10px;
-  margin-top: 50px;
+  width: 291px;
+  height: 251px;
+  margin: 20px 25px;
+  /* margin-top: 50px; */
   transition-duration: .3s;
   transition-timing-function: linear;
 }
@@ -44,12 +46,12 @@
 
 .newpic_bg img{
   position: absolute;
-  top: 54px;
-  left: 14px;
+  top: 86px;
+  left: 22px;
 }
 
 .new_date{
-  width: 385px;
+  width: 50%;
   /* height: 36px; */
   background-color: #FFE9C0;
   padding: 10px 15px;
@@ -77,64 +79,16 @@
 }
 
 .new_contact{
-  max-width: 917px;
+  /* max-width: 900px; */
+  max-width: 60%;
   margin: 40px auto;
   letter-spacing: 1.4px;
 }
 
-main{
-  position: relative;
-}
-
-.foot_print1{
-  position: absolute;
-  top: 50%;
-  left: 76%;
-  transform: rotate(-20deg);
-}
-
-
-.foot_print2{
-  position: absolute;
-  top: 45%;
-  left: 74%;
-  transform: rotate(-40deg);
-}
-
-
-.foot_print3{
-  position: absolute;
-  top: 39%;
-  left: 75%;
-  transform: rotate(10deg);
-}
-
-.foot_print4{
-  position: absolute;
-  top: 33%;
-  left: 77%;
-  transform: rotate(45deg);
-}
-
-.foot_print5{
-  position: absolute;
-  top: 28%;
-  left: 75%;
-  transform: rotate(-40deg);
-}
-
-.foot_print6{
-  position: absolute;
-  top: 23%;
-  left: 77%;
-  transform: rotate(30deg);
-}
-
-
 .lightset1 img{
   position: absolute;
-  top: 1300px;
-  left: 400px;
+  top: -60%;
+  left: 13%;
   animation-name: lightset1;
   animation-duration: 6s;
   transform-origin: left bottom;
@@ -163,8 +117,8 @@ main{
 
 .lightset2 img{
   position: absolute;
-  top:1300px;
-  left: 1200px;
+  top: -60%;
+  right: 13%;
   animation-name: lightset2;
   animation-duration: 6s;
   transform-origin: right bottom;

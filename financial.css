@@ -123,7 +123,7 @@ main{
     font-size: 24px;
     font-weight: 600;
     color: #5c5c5c;
-    margin-top: 80px;
+    margin-top: 120px;
     margin-bottom: 20px;
 }
 
@@ -228,7 +228,9 @@ main{
 
 .column_contact{
     display: flex;
-    width: 1100px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1100px;
     margin: 0 auto;
     position: relative;
     background-image: url("images/bg_dot.png");
@@ -241,8 +243,9 @@ main{
     display: block;
     background-repeat: no-repeat;
     height: 393px;/*圖片高度*/
-    width: 305px;/*圖片寬度*/
-    flex-grow: 1;
+    width: 313px;/*圖片寬度*/
+    /* flex-grow: 1; */
+    /* margin: 0 auto; */
 }
 
 
@@ -258,8 +261,8 @@ main{
     display: block;
     background-repeat: no-repeat;
     height: 385px;/*圖片高度*/
-    width: 305px;/*圖片寬度*/
-    flex-grow: 1;
+    width: 313px;/*圖片寬度*/
+    /* flex-grow: 1; */
 }
 
 
@@ -274,8 +277,8 @@ main{
     display: block;
     background-repeat: no-repeat;
     height: 383px;/*圖片高度*/
-    width: 305px;/*圖片寬度*/
-    flex-grow: 1;
+    width: 313px;/*圖片寬度*/
+    /* flex-grow: 1; */
 }
 
 
@@ -332,11 +335,15 @@ main{
     color: #5C5C5C;
 }
 
+.fin_bottom{
+    position: relative;
+}
+
 
 .pen img{
     position: absolute;
-    top: 0px ;
-    left: 1020px;
+    bottom: 5% ;
+    right: 40%;
     margin-bottom: 30px;
     margin-top: 1.5%;
     animation-name: pen;
@@ -350,43 +357,43 @@ main{
   
   @keyframes pen{
     0%{
-      left: 1020px;
-      transform: rotate(0deg);
+        right: 28%;
+        transform: rotate(0deg);
     }
     10%{
-        left: 1025px;
+        right: 27.7%;
         transform: rotate(-10deg);
     }
     20%{
-        left: 1030px;
+        right: 27.4%;
         transform: rotate(0deg);
     }
     30%{
-        left: 1035px;
+        right: 27.1%;
         transform: rotate(-10deg);
     }
     40%{
-        left: 1040px;
+        right: 26.8%;
         transform: rotate(-15deg);
     }
     50%{
-        left: 1045px;
+        right: 26.5%;
         transform: rotate(-10deg);
     }
     60%{
-        left: 1050px;
+        right: 26.2%;
         transform: rotate(-5deg);
     }
     75%{
-        left: 1055x;
+        right: 25.9%;
         transform: rotate(0deg);
     }
     90%{
-        left: 1060px;
+        right: 25.6%;
         transform: rotate(-5deg);
     }
     100%{
-        left: 1065px;
+        right: 25.3%;
         transform: rotate(-10deg);
     }
   }

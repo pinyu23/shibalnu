@@ -33,7 +33,7 @@
 /* 頁籤上的文字 */
 #tab > ul > li > a { 
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
     color: #333;
     float: left;

@@ -150,19 +150,3 @@
   font-weight: 600;
 }
 
-
-.read_more{
-  font-size: 20px;
-  display: block;
-  width: 1000px;
-  margin: 20px auto;
-  text-align: right;
-  
-}
-
-.read_more a{
-  background-color: #FFE9D8;
-  padding: 10px;
-  color: #5c5c5c;
-  border-radius: 10px;
-}

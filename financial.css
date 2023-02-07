@@ -399,3 +399,44 @@ main{
         transform: rotate(-10deg);
     }
   }
+
+
+
+
+
+
+
+  @media screen and (max-width: 750px){
+    .fin_contact01,
+    .fin_contact02,
+    .fin_contact03 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fin_contact_word{
+        max-width: 60%;
+    }
+
+    .fin_link{
+        margin-bottom: 50px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 500px){
+    .fin_contact_word{
+        max-width: 75%;
+    }
+
+
+    .fin_article01,
+    .fin_article02,
+    .fin_article03{
+        width: 320px
+    }
+  }
+
+
+
+

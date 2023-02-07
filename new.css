@@ -144,3 +144,23 @@
   }
 }
 
+
+/* ----------螢幕小於500px時---------- */
+@media screen and (max-width: 500px){
+  .new_contact{
+    max-width: 85%;
+  }
+
+  .lightset1 img{
+    width: 180px;
+    top: -34%;
+    right: 13%
+  }
+
+
+  .lightset2 img{
+    width: 180px;
+    top: -34%;
+    right: 13%
+  }
+}

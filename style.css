@@ -331,6 +331,9 @@ main{
 /* 主內容end*/
 
 
+
+
+/* ----------螢幕小於850px時---------- */
 @media screen and (max-width: 850px){
   .swiper {
     border-radius: 10px;
@@ -340,11 +343,17 @@ main{
     border-radius: 10px;
   }
 
+
+
   .home_bank img{
+    display: block;
+    margin-bottom: 20px;
     max-width: 31%;
   }
 
 }
+
+
 
 /* ----------螢幕小於750px時---------- */
 @media screen and (max-width: 750px){
@@ -352,6 +361,14 @@ main{
     max-width: 98%;
     margin: 0 auto;
   }
+
+
+  .home_bank{
+    flex-direction: column;
+    align-items: center;
+  }
+
+
   .home_card{
     flex-direction: column;
     align-items: center;
@@ -367,33 +384,45 @@ main{
   .main_tip_word{
     font-size: 20px;
   }
+
+  .main_bank_word{
+    margin-top: 70px;
+  }
+
+  .main_card_word{
+    margin-top: 50px;
+  }
+
+
+  .main_new_word{
+    margin-top: 30px;
+  }
+
+  .main_tip_word{
+    margin-top: 70px;
+  }
+
+
+  .home_bank img {
+    max-width: 60%;
+  }
 }
 
 
 /* ----------螢幕小於500px時---------- */
 @media screen and (max-width: 500px){
-  .footer_inner_2{
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer_logo{
-    margin-bottom: 30px;
-  }
-  .contact_us{
-    text-align: center;
-    margin-right: 30px;
-  }
+
 
 }
 
 
 /* ----------螢幕小於428px時---------- */
 @media screen and (max-width: 428px){
-  .home_card{
 
-  }
   .home_card_div{
     width: 400px;
     max-width: 80%;
   }
+
+
 }

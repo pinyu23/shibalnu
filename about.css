@@ -326,4 +326,44 @@
 
 /* 常見問題end */
 
+
+
+
+
+  /* ----------螢幕小於850px時---------- */
+@media screen and (max-width: 850px){
+  .about_contact1{
+    max-width: 50%;
+  }
+
+  .accordion{
+    margin: 40px auto;
+    max-width:90%;
+  }
   
+}
+
+
+
+  /* ----------螢幕小於500px時---------- */
+  @media screen and (max-width: 850px){
+    .about_contact{
+      flex-direction: column;
+
+    }
+    .about_contact1{
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+
+    .about_contact2{
+      margin-top: 50px;
+      max-width: 40%;
+    }
+
+    .arrow{
+      margin-top: 15%;
+      margin-bottom: 20%;
+    }
+
+  }

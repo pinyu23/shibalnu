@@ -411,7 +411,13 @@ main{
 
 /* ----------螢幕小於500px時---------- */
 @media screen and (max-width: 500px){
+  .swiper {
+    border-radius: 0;
+  }
 
+  .swiper-slide img {
+    border-radius: 0px;
+  }
 
 }
 

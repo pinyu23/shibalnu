@@ -646,7 +646,7 @@ hr{
   }
 
   .header_navigation_item{
-    height: 100px;
+    height: 72px;
     width: 100%;
     text-align: center;
   }
@@ -657,7 +657,7 @@ hr{
   }
 
   .header_navigation_list li a{
-    line-height: 80px;
+    line-height: 52px;
     padding: 10px auto;
     border-top: 1px solid #b6b6b6;
   }

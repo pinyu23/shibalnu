@@ -114,6 +114,8 @@ max-width: 1102px;
 .bookall .book{
     display: block;
     margin: 0 auto;
+    max-width: 200px;
+    width: 80%;
 }
 
 .bookall .book:hover{
@@ -161,3 +163,13 @@ a .buy{
     /* margin-bottom: 50px; */
     margin-bottom: 20%;
 }
+
+
+/* ----------螢幕小於500px時---------- */
+@media screen and (max-width: 500px){
+#tab{
+    width: 80%;
+}
+  
+  
+  }

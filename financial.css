@@ -405,7 +405,7 @@ main{
 
 
 
-
+    /* ----------螢幕小於750px時---------- */
   @media screen and (max-width: 750px){
     .fin_contact01,
     .fin_contact02,
@@ -423,7 +423,7 @@ main{
 
   }
 
-
+    /* ----------螢幕小於500px時---------- */
   @media screen and (max-width: 500px){
     .fin_contact_word{
         max-width: 75%;
@@ -433,9 +433,11 @@ main{
     .fin_article01,
     .fin_article02,
     .fin_article03{
-        width: 320px
+        width: 310px
     }
   }
+
+
 
 
 

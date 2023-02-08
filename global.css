@@ -623,15 +623,15 @@ hr{
   .menu_icon{
     display: block;
     height: 40px;
-    margin-top: 10px;
+    margin-top: 17px;
     margin-right: 20px;
   }
 
   .header_navigation_list{
-    background-color: #FFE9D8;
+    background-color: #fdf2e9;
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 75px;
     z-index: 100;
   }
   header{
@@ -700,12 +700,11 @@ hr{
     height: 60px;
   }  */
   .header_inner{
-    height: 60px;
+    height: 75px;
     padding-bottom: 2px;
   }
   .header_logo img{
-    height: 63px;
-    margin-left: 15px;
+    height: 75px;
   }
 
   .header_navigation_sign_up,
@@ -735,9 +734,6 @@ hr{
   .header_navigation_sign_up:active{
     padding: 6.5px 7.5px;
     }
-
-
-
 
 }
 

@@ -166,7 +166,7 @@ a .buy{
 
 
 /* ----------螢幕小於500px時---------- */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
 #tab{
     width: 80%;
 }

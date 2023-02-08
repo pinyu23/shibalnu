@@ -647,6 +647,8 @@ hr{
 
   .header_navigation_item{
     height: 100px;
+    width: 100%;
+    text-align: center;
   }
 
   .header_btn{
@@ -656,8 +658,8 @@ hr{
 
   .header_navigation_list li a{
     line-height: 80px;
-    padding: 10px 130px;
-    border-top: 2px solid #b6b6b6;
+    padding: 10px auto;
+    border-top: 1px solid #b6b6b6;
   }
 
   .header_navigation_list li:first-child a{
@@ -669,20 +671,76 @@ hr{
     border-bottom: none;
   }
 
+  .main_new .ticket .ticket_inn{
+    display: none;
+  }
+
+  .main_tip .ticket .ticket_inn{
+    display: none;
+  }
+
+
+  /* div.fade-left{
+    display: none;
+  }
+
+  .aos-init,
+  .aos-animate{
+    display: none;
+  } */
+
+  .header_btn{
+    margin-right: 2%;
+    margin-left: auto;
+  }
+
+
   /* ----------header---------- */
   /* header{
     height: 60px;
   }  */
   .header_inner{
     height: 60px;
-
     padding-bottom: 2px;
   }
   .header_logo img{
     height: 63px;
     margin-left: 15px;
   }
+
+  .header_navigation_sign_up,
+  .header_navigation_log_in{
+    padding: 7px 11px;
+  }
+
+  .header_navigation_log_in:active,
+  .header_navigation_sign_up:active{
+    padding: 7.5px 11.5px;
+    }
+
+
+
 }
+
+
+/* ----------螢幕小於768px時---------- */
+@media screen and (max-width: 768px){
+
+  .header_navigation_sign_up,
+  .header_navigation_log_in{
+    padding: 6px 7px;
+  }
+
+  .header_navigation_log_in:active,
+  .header_navigation_sign_up:active{
+    padding: 6.5px 7.5px;
+    }
+
+
+
+
+}
+
 
 
 /* ----------螢幕小於500px時---------- */
@@ -702,5 +760,10 @@ hr{
   .footer_logo img{
     width: 160px;
   }
+
+  .menu_icon{
+    margin-right: 10px;
+  }
+
 
 }

@@ -358,9 +358,78 @@ main{
 
   .home_bank img{
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     max-width: 31%;
   }
+
+  .ticket .ileo_h2,
+  .ticket .ileo_p,
+  .ticket .bankee_h2,
+  .ticket .bankee_p,
+  .ticket .tip01_h2,
+  .ticket .tip01_p,
+  .ticket .tip02_h2,
+  .ticket .tip02_p,
+  .ticket .img02,
+  .ticket .img03,
+  .ticket .img04,
+  .ticket .img05{
+    position: static;
+  }
+
+
+  .ticket .ileo_h2,
+  .ticket .bankee_h2,
+  .ticket .tip01_h2,
+  .ticket .tip02_h2{
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border-left: 10px solid #FFDFA2;
+  }
+
+
+  .ticket .ileo_p,
+  .ticket .bankee_p,
+  .ticket .tip01_p,
+  .ticket .tip02_p{
+    font-size: 16px;
+
+  }
+
+  .ticket .img02,
+  .ticket .img03,
+  .ticket .img04,
+  .ticket .img05{
+    width: 40%;
+  }
+
+  .ticket div{
+    background-color: #FFDFA2;
+    border-radius: 35px;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 75px;
+    align-items: center;
+    box-shadow: 20px 20px 28px rgb(0 0 0 / 20%);
+  }
+
+
+
+  .img02{
+    flex-grow: 1;
+  }
+
+  main{
+    max-width: 100%;
+  }
+
+  .main_new_word,
+  .main_tip_word{
+    margin-bottom: 59px;
+  }
+
+
 
 }
 
@@ -415,7 +484,7 @@ main{
 
 
   .home_bank img {
-    max-width: 60%;
+    max-width: 75%;
   }
 }
 

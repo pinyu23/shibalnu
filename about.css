@@ -333,7 +333,7 @@
   /* ----------螢幕小於850px時---------- */
 @media screen and (max-width: 850px){
   .about_contact1{
-    max-width: 50%;
+    max-width: 80%;
   }
 
   .accordion{

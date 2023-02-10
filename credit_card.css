@@ -96,13 +96,26 @@
 }
 
 
-.credit_card{
+/* .credit_card{
   width: 1000px;
   margin: 80px auto;
+} */
+
+
+
+.card_contact{
+  display: flex;
+  justify-content: center;
+  margin: 80px 20px 50px 20px;
 }
 
+.card_inner{
+  width: 40%;
+  margin-left: 30px;
+  margin-top: 60px;
+}
 
-.card_word01{
+.card_name{
   color: #5c5c5c;
   font-size: 26px;
   font-weight: 600;
@@ -112,45 +125,77 @@
 }
 
 
-.card_word01:hover{
+.card_name:hover{
   text-decoration: underline;
 }
 
 
-.card01{
-  width: 800px;
+.card_name a{
+  color: #5c5c5c;
+  font-size: 26px;
+  font-weight: 600;
 }
 
-.card_tag01,
-.card_tag02{
+.card_tag{
   display: inline-block;
-  margin: 0 0 20px 40px;
+  margin: 0 15px 20px 0;
   font-size: 20px;
   padding: 10px 15px 10px 10px;
   background-color: #D9D9D9;
   border-radius: 30px;
   color: white;
-}
-
-.card_tag02{
-  margin: 0 0 20px 20px;
-}
-
-.card_tag01:hover,
-.card_tag02:hover{
-
   box-shadow: 0px 2px 3px rgba(48, 48, 48, 0.252);
 }
 
-.card_contact01{
-  display: flex;
-}
-
-
-.card_contact_word01{
-  margin-left: 25px;
+.card_contact_name{
   font-size: 18px;
   line-height: 1.2;
   font-weight: 600;
 }
 
+
+    /* ----------螢幕小於750px時---------- */
+    @media screen and (max-width: 750px){
+      .card_contact{
+          flex-direction: column;
+          align-items: center;
+      }
+      .fin_contact_word{
+          max-width: 60%;
+      }
+  
+      .fin_link{
+          margin-bottom: 50px;
+      }
+
+      .card_inner{
+        width: 69%;
+        align-items: start;
+      }
+
+      .card_contact{
+        margin-top: 50px;
+      }
+
+      .card_inner{
+        margin-top: 15px
+      }
+
+    }
+
+
+        /* ----------螢幕小於550px時---------- */
+        @media screen and (max-width: 550px){
+          .card_inner{
+            width: 81%;
+          }
+    
+        }
+
+        /* ----------螢幕小於450px時---------- */
+        @media screen and (max-width: 450px){
+          .card_img img{
+            width: 100%;
+          }
+    
+        }

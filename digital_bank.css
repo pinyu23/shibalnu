@@ -23,172 +23,195 @@
 }
 
 
-.wrapper1{
-    /* width: 1300px; */
-    width: 67%;
+.wrapper{
+    width: 65%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
 }
 
-.wrapper1 .bank_card{
+
+.bank_card{
+    flex-grow: 1;
+}
+
+.bank_card_content{
+    max-width: 350px;
+    width: 95%;
+    height: 470px;
+    margin: 25px auto;
+    border: 1px solid #e6ae69;
+    padding: 20px;
     background-color: #FFF0D2;
-    border: 1px solid #E39940;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.200);
-    flex-basis: 400px;
-    flex-grow: 1;
-    margin: 10px;
+    border-radius: 20px;
+    /* margin: 32px; */
 }
 
-.horizontal img{
+.bank_card_content img{
     display: block;
-    /* width: 350px; */
-    width: 80%;
-    margin: 10px auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
-/* .horizontal{
-    width: 10%;
-    height: 1000px;
-
-} */
 
 
 
-.wrapper1 .digital_bank_contact h2{
-    text-align: center;
-    font-size: 24px;
+.bank_card_content h2{
+    font-size: 22px;
     font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.wrapper1 .digital_bank_contact p{
-    margin-left: 40px;
-}
-
-.wrapper1 .digital_bank_contact a{
-    display: block;
-    width: 300px;
+    line-height: 1.5;
     text-align: center;
-    margin: 20px auto;
-    border-radius: 10px;
-    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-
-a.detail01{
-    border: 1px solid #FFBC86;
-    color: #FFBC86;
-    background-color: #fff;
-}
-
-a.join01{
-    border: 1px solid #FFBC86;
-    color: #fff;
-    background-color: #FFBC86;
-}
-
-a.detail01:hover{
-    border: 1px solid #FFBC86;
-    color: #fff;
-    background-color: #FFBC86;
-}
-
-a.join01:hover{
-    border: 1px solid #FFBC86;
-    color: #FFBC86;
-    background-color: #fff;
-}
-
-
-.verical{
-    /* width: 600px; */
-    height: 400px;
-
-}
-/* .verical img{
-    height: 360px;                                                                                                                                                                                             
-} */
-
-
-
-.wrapper2 .bank_card{
-    display: flex;
-    background-color: #FFF0D2;
-    border: 1px solid #E39940;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.200);
-    /* flex-basis: 400px; */
-    flex-grow: 1;
-    margin: 10px;
-}
-
-.wrapper2 img{
-    display: block;
-    align-self: center;
-    margin-left: 15px;
-}
-
-.wrapper2 .digital_bank_contact{
-    margin-top: 80px;
-    
-    flex-grow: 1;
-}
-
-
-.wrapper2 h2{
-    font-size: 24px;
+.bank_card_content h3{
+    font-size: 18px;
     font-weight: 600;
-    margin-left: 30px;
+    line-height: 1.5;
 }
 
-.wrapper2 p{
-    margin-top: 30px;
-    margin-left: 30px;
+.bank_card_content p{
+    line-height: 1.5;
 }
 
-
-.wrapper2 .digital_bank_contact a{
+.bank_card_content .btn1,
+.bank_card_content .btn2{
     display: block;
-    width: 280px;
-    text-align: center;
-    margin: 20px auto;
-    border-radius: 10px;
-    padding: 10px 20px;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
-a.detail02{
+.bank_card_content .btn1{
     border: 1px solid #FFBC86;
+    background-color: white;
     color: #FFBC86;
-    background-color: #fff;
 }
 
-a.join02{
+.bank_card_content .btn2{
     border: 1px solid #FFBC86;
-    color: #fff;
     background-color: #FFBC86;
+    color: white;
 }
 
-a.detail02:hover{
-    border: 1px solid #FFBC86;
-    color: #fff;
-    background-color: #FFBC86;
-}
 
-a.join02:hover{
-    border: 1px solid #FFBC86;
-    color: #FFBC86;
-    background-color: #fff;
-}
+
+
+
+/* 直式 */
 
 .wrapper2{
-    /* width: 1300px; */
-    width: 67%;
-    margin-top: 20px;
+    width: 58%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
 }
+
+
+.bank_card2{
+    flex-grow: 1;
+}
+
+
+
+.bank_card_content2{
+    width: 350px;
+    /* width: 95%; */
+    height: 570px;
+    margin: 25px auto;
+    border: 1px solid #e6ae69;
+    padding: 20px;
+    background-color: #FFF0D2;
+    border-radius: 20px;
+}
+
+.bank_card_content2 img{
+    display: block;
+    width: 205px;
+    /* width: 80%; */
+    margin: 0 auto;
+}
+
+.bank_card_content2 h2{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.bank_card_content2 h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.bank_card_content2 p{
+    line-height: 1.5;
+}
+
+
+.bank_card_content2 .btn1,
+.bank_card_content2 .btn2{
+    display: inline-block;
+    width: 49%;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+.bank_card_content2 .btn1{
+    border: 1px solid #FFBC86;
+    background-color: white;
+    color: #FFBC86;
+}
+
+.bank_card_content2 .btn2{
+    border: 1px solid #FFBC86;
+    background-color: #FFBC86;
+    color: white;
+}
+
+
+
+  /* ----------螢幕小於1400px時---------- */
+  @media screen and (max-width: 1400px){
+    .wrapper{
+        width: 85%;
+    }
+    .wrapper2{
+        width: 95%;
+    } 
+    
+  }
+
+
+ /* ----------螢幕小於400px時---------- */
+ @media screen and (max-width: 400px){
+    .bank_card_content2{
+        width: 95%;
+    }
+    
+  }
+
+
+    /* ----------螢幕小於450px時---------- */
+    @media screen and (max-width: 1400px){
+        .wrapper{
+            width: 95%;
+        }
+        
+      }

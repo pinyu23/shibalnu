@@ -112,7 +112,7 @@
                 <!-- logo end -->
 
                 <!-------選單-------->
-                <ul class="header_navigation_list">
+                <ul id="nav_rwd" class="header_navigation_list btn_none">
                     <li class="header_navigation_item">
                         <a href="new.html">最新消息</a></li>
                     <li class="header_navigation_item">
@@ -134,6 +134,10 @@
                             <button class="header_navigation_sign_up">註冊</button>
                 </div>
                 <!-------登入/註冊區end--------> 
+
+                <!-- 漢堡線 -->
+                <button type="button" id="menu_btn"><img src="images/menu_icon.png" alt=""></button>
+                <!-- 漢堡線 end-->
 
             </div>
         </header>
@@ -460,6 +464,16 @@
         });
     </script>
     <!-- 跳至最上方的按鈕end -->
+
+    <!-- 漢堡線 -->
+    <script>
+        let menu_btn = document.getElementById("menu_btn");
+        menu_btn.addEventListener("click", function(){
+            let nav_rwd = document.getElementById("nav_rwd");
+            nav_rwd.classList.toggle("btn_none"); 
+        });
+    </script>
+    <!-- 漢堡線 end-->
         
 </body>
 </html>

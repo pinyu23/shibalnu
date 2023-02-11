@@ -197,6 +197,7 @@
   font-weight: 600;
   color: #5c5c5c;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .q_a::before {
@@ -210,118 +211,68 @@
 }
 
 
-/* 設定分頁的寬度，將頂部和底部的邊距設定90px，左右邊距設定為auto */
+.question{
 
-.accordion {
-  /* width: 800px; */
-  max-width: 70%;
-  margin: 90px auto;
-  color: black;
-  /* background-color: white; */
-  padding: 45px 45px;
+  border-radius: 10px;
+  margin: 20px;
 }
 
-.accordion .container {
-  position: relative;
-  margin: 10px 10px;
+.question-list {
+  max-width: 1100px;
+  width: 80%;
+  margin: 0 auto;
+
 }
 
+.question .foot{
+  width: 45px;
+  height: 45px;
+  /* float: left; */
+}
 
-/* 相對於.container 定位tag，在頂部和底部加上高度並增加字體大小 */
+.question img{
+  width: 16px;
+  height: 16px;
+  align-self: center;
+}
 
-.accordion .label {
+.question h3{
+  /* float: left; */
+  line-height: 45px;
+  margin-left: 25px;
+  flex-grow: 1;
+}
+
+.question div{
   display: flex;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  position: relative;
-  /* padding: 30px 155px; */
-  color: black;
   background-color: #FFBD88;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 100%;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.question div:hover,.question div.active {
+  background-color: #FFBD88;
+  /* color: #fff; */
   cursor: pointer;
   border-radius: 10px;
-  max-width: 100%;
 }
 
-
-/* 將加號放在距離右側5px的位置，使用transform將其居中 */
-
-.accordion .label::before {
-  content: url("images/add.png");
-  color: black;
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
-}
-
-
-/* 隱藏內如容(高度為0)，減小字體大小，對齊文字並加上過度 */
-
-.accordion .content {
-  display: flex;
-  position: relative;
-  background: #FFE1AB;
-  height: 0;
-  border-radius: 10px;
-  text-align: justify;
-  max-width: 100%;
-  overflow: hidden;
-  transition: 0.5s;
+.question p {
+  padding: 30px;
+  font-size: 18px;
+/*   預設把p元素隱藏不顯示 */
+  display: none;
+  line-height: 1.3;
   margin-top: 10px;
-  /* margin-right: 5px; */
-  padding: auto;
-  word-break: break-all;
-  /* padding-left: 155px;
-  padding-right: 30px; */
-}
-
-.accordion .label:hover{
   background-color: #FFE1AB;
-}
-
-.content_word{
-  margin: 3%;
-  line-height: 1.5;
-}
-
-.label div{
-  margin: 3%;
-  padding: auto;
-}
-
-
-.foot{
-  margin: auto 0 auto 3%;
-  width: 45px;
-}
-
-.accordion .content img{
-  display: block;
-  margin: auto 0 auto 3%;
-  width: 45px;
-  height: 60%;
-}  
-
-/* 內容間有水平線 */
-
-/* .accordion hr {
-  width: 100;
-  margin-left: 0;
-  border: 1px solid grey;
-} */
-
-
-/* 活動時取消隱藏內容的部分。設定高度 */
-
-.accordion .container.active .content {
-  height: auto;
-}
-
-/* 加號變負號 */
-
-.accordion .container.active .label::before {
-  content: url("images/sub.png");
+  border-radius: 10px;
 }
 
 /* 常見問題end */

@@ -10,6 +10,26 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="global.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.question div').click(function(e) {
+                //讓點擊到div時，帶入question div.active的CSS效果
+                $(this).toggleClass('active');
+                //讓點擊到div時，div找到父元素.question，再找到裡面的p元素，使用slideToggle()判斷收闔
+                $(this).parent().find('p').slideToggle();
+                //讓自己以外的p收闔隱藏起來
+                $(this).parent().siblings().find('p').slideUp();
+                //讓自己以外的h3，移除帶入question h3.active的CSS效果
+                $(this).parent().siblings().find('h3').removeClass('active');
+
+
+
+                //$(this).children('.sub').attr("src","images/sub.png");
+
+            });
+        });
+    </script>
 </head>
 <body>
     <div>
@@ -182,109 +202,86 @@
         <div class="accordion-body">
             <div class="accordion">
                 <div class="q_a">常見問題</div>
-                    <div class="container">
-                        <div class="label">
+                <div class="question-list">
+                    <div class="question">
+                        <div>
                             <img class="foot" src="images/foot.png" alt="">
-                                <div>什麼是ETF? ETF是股票嗎? </div>
+                            <h3>什麼是ETF? ETF是股票嗎?</h3>
+                            <img src="images/qa_arrow.png" alt="">
                         </div>
-                        <div class="content">
-                            <img src="images/QA_logo.png" alt="">
-                            <div class="content_word">
-                                是一種交易模式與股票完全相同，但交易稅僅為股票三分之一的基金。
-                                以「元大台灣50」為例，買入一張元大台灣50，基金公司會拿這些錢去買台灣前50大公司的股票。因前50大公司占台灣上市公司總和6成以上，所以基本上元大台灣50的漲跌幅與大盤有很高的相關性。
-                            </div>
-                        </div>
+                      <p>
+                        是一種交易模式與股票完全相同，但交易稅僅為股票三分之一的基金。
+                        以「元大台灣50」為例，買入一張元大台灣50，基金公司會拿這些錢去買台灣前50大公司的股票。
+                        因前50大公司占台灣上市公司總和6成以上，所以基本上元大台灣50的漲跌幅與大盤有很高的相關性。
+                      </p>
                     </div>
-
-                    <div class="container">
-                        <div class="label">
+                    <div class="question">
+                        <div>
                             <img class="foot" src="images/foot.png" alt="">
-                            <div>社會新鮮人該怎麼開始投資? </div>
+                            <h3>社會新鮮人該怎麼開始投資?</h3>
+                            <img src="images/qa_arrow.png" alt="">
                         </div>
-                        <div class="content">
-                            <img src="images/QA_logo.png" alt="">
-                            <div class="content_word">
-                                理財新手必知的8個金錢守則：「戶頭要有3個月薪水存款，投資股票不是賭博！」
-                                社會新鮮人的理財第一步>> 存款
-                                相信大部分人都有一定的基本概念，存錢就不能只是將每個月花剩的金額存起來，而是要制定存款計劃。
-                            </div>
-                        </div>
+                      <p>理財新手必知的8個金錢守則：「戶頭要有3個月薪水存款，投資股票不是賭博！」 
+                        社會新鮮人的理財第一步>> 存款 相信大部分人都有一定的基本概念，
+                        存錢就不能只是將每個月花剩的金額存起來，而是要制定存款計劃。
+                    </p>
                     </div>
-
-                    <div class="container">
-                        <div class="label">
+                    <div class="question">
+                        <div>
                             <img class="foot" src="images/foot.png" alt="">
-                            <div>數位帳戶是什麼?風險高嗎? </div>
+                            <h3>數位帳戶是什麼?風險高嗎?</h3>
+                            <img src="images/qa_arrow.png" alt="">
                         </div>
-                        <div class="content">
-                            <img src="images/QA_logo.png" alt="">
-                            <div class="content_word">
-                                根據金管會銀行局的統計資料，
-                                2020年數位帳戶開戶數6,463,098戶，
-                                至2022年Q3達到13,855,461戶，
-                                可說是成長飛速，
-                                金管會比我們還怕資安問題，
-                                所以非常嚴格把關數位帳戶風險的安全性。
-                            </div>
-                        </div>
+                      <p>根據金管會銀行局的統計資料， 2020年數位帳戶開戶數6,463,098戶，
+                        至2022年Q3達到13,855,461戶， 
+                        可說是成長飛速， 金管會比我們還怕資安問題， 所以非常嚴格把關數位帳戶風險的安全性。
+                     </p>
                     </div>
-
-                    <div class="container">
-                        <div class="label">
+                    <div class="question">
+                        <div>
                             <img class="foot" src="images/foot.png" alt="">
-                            <div>數位帳戶 vs 網路銀行比較 </div>
+                            <h3>數位帳戶 vs 網路銀行比較</h3>
+                            <img src="images/qa_arrow.png" alt="">
                         </div>
-                        <div class="content">
-                            <img src="images/QA_logo.png" alt="">
-                            <div class="content_word">
-                                數位帳戶:<br>
-                                數位帳戶沒有實體存摺、可以設立實體分行，服務範圍跟一般銀行沒有區別，所有服務皆透過網路進行。
-                                <br>
-                                <br>
-                                網路銀行:<br>
-                                能執行轉帳、查詢餘額等簡單金融服務，部分服務受到銀行營業時間限制。
-                                <br>
-                                <br>
-                                純網銀:<br>
-                                沒有實體分行、能進行所有傳統銀行業務，透過異業結盟打造生態系，刺激金融服務創新。
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container">
-                        <div class="label">
+                        <p>數位帳戶:
+                            數位帳戶沒有實體存摺、可以設立實體分行，服務範圍跟一般銀行沒有區別，所有服務皆透過網路進行。
+                            <br>
+                            <br>
+                            網路銀行:
+                            能執行轉帳、查詢餘額等簡單金融服務，部分服務受到銀行營業時間限制。
+                            <br>
+                            <br>
+                            純網銀:
+                            沒有實體分行、能進行所有傳統銀行業務，透過異業結盟打造生態系，刺激金融服務創新。
+                        </p>
+                      </div>
+                      <div class="question">
+                        <div>
                             <img class="foot" src="images/foot.png" alt="">
-                            <div>信用小白辦卡怎樣才會過? </div>
+                            <h3>信用小白辦卡怎樣才會過?</h3>
+                            <img src="images/qa_arrow.png" alt="">
                         </div>
-                        <div class="content">
-                            <img src="images/QA_logo.png" alt="">
-                            <div class="content_word">
-                                辦理薪轉銀行的信用卡
-                                薪轉銀行因為有穩定的薪水轉入，往來紀錄也是最穩定的，因此建議如果是第一張辦卡，可以選擇薪轉銀行的信用卡方案。
-                                <br>
-                                <br>
-                                選擇定存 / 存款較多的銀行信用卡
-                                如果沒有薪轉帳戶的話，也可以選擇存款較多的銀行申辦信用卡，或是開戶並存入一筆錢，這樣一來可以提高核卡率。
-                                <br>
-                                <br>
-                                申辦主打年輕族群的信用卡
-                                有些銀行也針對年輕族群推出信用卡，這些卡片回饋不比別人差，核卡率也比較一般信用卡高，像花旗現金回饋Plus鈦金卡、台新GOGO卡、國泰Cube卡等信用卡，都對信用小白比較友善。
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container">
-                        <div class="label">
+                        <p>辦理薪轉銀行的信用卡 薪轉銀行因為有穩定的薪水轉入，往來紀錄也是最穩定的，因此建議如果是第一張辦卡，可以選擇薪轉銀行的信用卡方案。
+                            <br>
+                            <br>
+                            選擇定存 / 存款較多的銀行信用卡 如果沒有薪轉帳戶的話，也可以選擇存款較多的銀行申辦信用卡，或是開戶並存入一筆錢，這樣一來可以提高核卡率。
+                            <br>
+                            <br>
+                            申辦主打年輕族群的信用卡 有些銀行也針對年輕族群推出信用卡，這些卡片回饋不比別人差，核卡率也比較一般信用卡高，像花旗現金回饋Plus鈦金卡、台新GOGO卡、國泰Cube卡等信用卡，都對信用小白比較友善。
+                        </p>
+                      </div>
+                      <div class="question">
+                        <div>
                             <img class="foot" src="images/foot.png" alt="">
-                            <div>股票開戶推薦哪家好? </div>
+                            <h3>股票開戶推薦哪家好?</h3>
+                            <img src="images/qa_arrow.png" alt="">
                         </div>
-                        <div class="content">
-                            <img src="images/QA_logo.png" alt="">
-                            <div class="content_word">
-                                擁有證券戶，是投資 股票 的第一步，市面上的證券商何其多，到底該如何來挑選呢？如果你是投資新手的話，一般來說，投資人可能考慮以下幾點：手續費折扣、營業據點、下單軟體、券商券源量
-                            </div>
-                        </div>
-                    </div>
+                        <p>
+                            擁有證券戶，是投資 股票 的第一步，市面上的證券商何其多，到底該如何來挑選呢？如果你是投資新手的話，一般來說，投資人可能考慮以下幾點：手續費折扣、營業據點、下單軟體、券商券源量
+                        </p>
+                      </div>
+                </div>
+            
             </div>
         </div>
         <!-- 常見問題 -->

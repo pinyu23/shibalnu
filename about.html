@@ -160,7 +160,7 @@
                 <!-------登入/註冊區end--------> 
 
                 <!-- 漢堡線 -->
-                <button type="button" id="menu_btn"><img src="images/menu_icon.png" alt=""></button>
+                <button type="button" id="menu_btn"><img id="menu_btn_img" src="images/menu_icon.png" alt=""></button>
                 <!-- 漢堡線 end-->
 
             </div>
@@ -467,6 +467,27 @@
     <!-- 跳至最上方的按鈕end -->
 
     <!-- 漢堡線 -->
+    <script>
+        $('#menu_btn').click(function(){
+            $('#nav_rwd').slideToggle(500, 'linear')
+        })
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+            let flag = 0;  
+            $('#menu_btn').click(function(){
+            if(flag == 0) {
+                $('#menu_btn_img').attr("src","images/menu_icon2.png");
+                flag = 1;
+            }
+            else if(flag == 1) {
+                $('#menu_btn_img').attr("src","images/menu_icon.png");
+                flag = 0;
+            }
+            });
+        });
+    </script>
 
 
     <script>
@@ -476,8 +497,6 @@
             nav_rwd.classList.toggle("btn_none"); 
         });
     </script>
-
-
     <!-- 漢堡線 end-->
         
 </body>

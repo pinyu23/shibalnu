@@ -164,6 +164,107 @@ a .buy{
     margin-bottom: 20%;
 }
 
+.fa-heart{
+    display: inline-block;
+    font-size: 24px;
+    color: #E9E9E9;
+}
+
+.-on{
+    color: #FFBD88;
+    transform: scale(1.15);
+}
+
+.heart{
+    border: none;
+    background-color : transparent;
+    vertical-align: middle;
+}
+
+
+/* 加愛心沒加愛心 */
+
+#add_book {
+    visibility: hidden;
+    min-width: 20px;
+    /* margin-left: -125px; */
+    background-color: #FFBD87;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    left: calc(50% - 100px);
+    bottom: 30px;
+    font-size: 20px;
+}
+    
+#add_book.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 1s;
+}
+    
+    
+@keyframes fadein {
+    from {bottom: 30px; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+    
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 30px; opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+#remove_book {
+    visibility: hidden;
+    min-width: 20px;
+    /* margin-left: -125px; */
+    background-color: #929292;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    left: calc(50% - 100px);
+    bottom: 30px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+    
+#remove_book.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 1s;
+}
+    
+    
+@keyframes fadein {
+    from {bottom: 30px; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+    
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 30px; opacity: 0;}
+}
+
+
+
+
+/* 加愛心沒加愛心 end*/
 
 /* ----------螢幕小於500px時---------- */
 @media screen and (max-width: 900px){

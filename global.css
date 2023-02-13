@@ -81,162 +81,151 @@ a{
 
 
 
-/* 登入按鈕 */
-
 button{
   cursor: pointer;
 }
 
 #lightbox{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: hsla(0, 0%, 0%, .5);
-  z-index: 100;
+position: fixed;
+/* position: relative; */
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background-color: hsla(0, 0%, 0%, .5);
+z-index: 1000;
 }
 
-  .none{
-    display: none;
-  }
+.none{
+  display: none;
+}
   
-/* #lightbox{
-  position: relative;
-  z-index: 100;
-} */
 
 #lightbox > article{
-  background-color: #F5EFE6;
-  width: 90%;
-  max-width: 830px;
-
-  height: 550px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ddd;
-  /* padding: 10px; */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* border: 2px solid black; */
-  display: flex;
+background-color: #F5EFE6;
+width: 90%;
+max-width: 830px;
+height: 550px;
+border-radius: 10px;
+box-shadow: 0 0 10px #ddd;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+overflow-x: hidden;
 }
   
-.login_logo2 img{
-  width: 200px;
+
+.log_in_close{
+border: none;
+background-color: transparent;
+position: absolute;
+top: 25px;
+right: 25px;
 }
 
-.login_logo3 img{
-  width: 224px;
-  display: block;
-  margin: 62px auto;
-}
-  
-.log_in{
-  width: 830px;
-  height: 500px;
-  border-radius: 15px;
-  background-color: #F5EFE6;
-  /* border: 2px solid black; */
-  display: flex;
-  box-shadow: 0 0 10px #ddd;
+.log_in_content{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 55px;
 }
 
 .log_in_left{
-  flex-grow: 1;
-  margin-left: 125px;
+font-size: 30px;
+text-align: center;
+width: 50%;
 }
+
 
 .log_in_right{
-  flex-grow: 2.5;
-  padding-left: 73px;
-  padding-top: 25px;
-  margin-left: 43px;
+width: 50%;
+margin: 0 auto;
+text-align: center;
+margin-right: 50px;
 }
 
-.log_in_left h2{
-  font-size: 30px;
-  text-align: center;
-  margin-top: 100px;
-}
-  
-.log_in_contact{
-  margin-top: 35px;
+
+
+.login_logo2 img{
+width: 52%;
+min-width: 160px;
 }
 
-.log_in_button1{
-  width: 300px;
-  height: 40px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  border: none;
-  background-color: #D9D9D9;
+
+.login_logo3{
+margin: 60px auto;
 }
-  
+
+.login_logo3 img{
+max-width: 235px;
+width: 70%;
+}
+
+
+.log_in_button1 {
+width: 300px;
+max-width: 97%;
+height: 40px;
+border-radius: 10px;
+cursor: pointer;
+margin-top: 30px;
+margin-bottom: 20px;
+border: none;
+background-color: #D9D9D9;
+}
+
 .log_in_button2{
-  width: 145px;
-  height: 40px;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: #E72D2D;
-  border: none;
-  color: white;
+width: 145px;
+max-width: 45%;
+height: 40px;
+border-radius: 10px;
+cursor: pointer;
+background-color: #E72D2D;
+border: none;
+color: white;
 }
 
 .log_in_button3{
-  width: 150px;
-  height: 40px;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: #004A8B;
-  border: none;
-  color: white;
-}
-  
-form{
-  margin-top: 30px;
+width: 150px;
+max-width: 50%;
+height: 40px;
+border-radius: 10px;
+cursor: pointer;
+background-color: #004A8B;
+border: none;
+color: white;
 }
 
-.password{
-  margin-top: 11px;
+.forget {
+margin-top: 20px;
 }
 
-.forget{
-  margin-top: 20px;
-}
-
-.forget a{
+.forget a {
   text-decoration: none;
   color: #4A4A4A;
 }
-  
-  
-#username{
-  border: none;
-  border-radius: 5px;
-  height: 30px;
-  width: 200px;
-  text-indent: 10px;
+
+.log_in_left h2{
+margin-top: 20px;
 }
 
+form{
+  margin-top: 25px;
+}
+
+
+#username,
 #password{
-  border: none;
-  border-radius: 5px;
-  height: 30px;
-  width: 200px;
-  text-indent: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+border: none;
+border-radius: 5px;
+height: 40px;
+width: 250px;
+max-width: 79%;
+text-indent: 10px;
 }
-
-.log_in_close{
-  margin-left: 305px;
-  border: none;
-  background-color: #F5EFE6;
-}
-
-/* 登入按鈕end */
 
 
 
@@ -247,8 +236,23 @@ button{
   cursor: pointer;
 }
 
+.sign_in_close{
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.sign_in_contact{
+  display: flex;
+  justify-content: center;
+  /* width: 50%;
+  margin: 0 auto; */
+  margin-top: 70px;
+}
+
 #lightbox_2{
-/*   border: 1px solid red; */
   position: fixed;
   top: 0;
   left: 0;
@@ -261,12 +265,7 @@ button{
 .none{
   display: none;
 }
-  
-/* 元素 article 置中及基本樣式 */
-/* #lightbox{
-  position: relative;
-  z-index: 100;
-} */
+
 
 #lightbox_2 > .sign_in{
   background-color: #F5EFE6;
@@ -282,26 +281,13 @@ button{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border: 2px solid black; */
-  display: flex;
 }
 
 
 .sign_in::-webkit-scrollbar {
-  width: 0;
+width: 0;
 }
   
-/* .sign_in::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-  
-.sign_in::-webkit-scrollbar-thumb {
-  background-color: red;
-  border: 1px solid slategrey;
-} */
-
-
-
 .sign_in{
   width: 580px;
   height: 780px;
@@ -311,55 +297,49 @@ button{
   box-shadow: 0 0 10px #ddd;
 }
 
-/* .signin_logo2{
-    margin-top: 20px;
-} */
 
 .sign_in h2{
-    font-size: 30px;
-    margin-top: 20px;
+  font-size: 30px;
+  margin-top: 20px;
 }
 
 .signin_logo2 img{
-    width: 200px;
-}
-
-.sign_in_close{
-  margin-left: 362px;
-  margin-top: 20px;
-  border: none;
-  /* background-color: #F5EFE6; */
-  background-color:transparent;
+  width: 90%;
+  max-width: 200px;
 }
 
 .sign_in_inner{
-    margin-left: 160px;
+  width: 80%;
+  max-width: 250px;
 }
 
+
+
 form{
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 form div{
-    margin-top: 3px;
+  margin-top: 15px;
+  line-height: 1.4;
 }
 
-.sign_up_button1{
-    margin-top: 10px;
-}
 
-#email,#username,#phone,#password,#password2{
+
+#email,#username2,#phone,#password2,#password3{
   margin-top: 10px;
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
   height: 40px;
   width: 250px;
+  max-width: 90%;
   text-indent: 10px;
 }
 
 .sign_in_button1{
   width: 250px;
+  max-width: 90%;
   height: 40px;
   border-radius: 10px;
   cursor: pointer;
@@ -370,6 +350,7 @@ form div{
 }
 
 /* 註冊按鈕end */
+
 
 /* 導覽 */
 header{
@@ -748,6 +729,44 @@ hr{
 
 
 
+
+/* ----------螢幕小於600px時---------- */
+@media screen and (max-width: 600px){
+
+  .login_logo3{
+    display: none;
+  }
+  
+  .log_in_content{
+    display: block;
+  }
+
+  .log_in_left{
+    margin: 0 auto;
+  }
+
+  .log_in_right{
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  form{
+    margin-top: 20px;
+  }
+
+  .log_in_left h2{
+    margin-bottom: 20px;
+  }
+
+}
+
+#lightbox > article {
+  height: 595px;
+}
+
+
+
 /* ----------螢幕小於500px時---------- */
 @media screen and (max-width: 500px){
   .footer_inner_2{
@@ -771,4 +790,12 @@ hr{
   }
 
 
+}
+
+
+/* ----------螢幕小於450px時---------- */
+@media screen and (max-width: 450px){
+  #lightbox > article {
+    height: 570px;
+  }
 }

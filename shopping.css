@@ -164,6 +164,15 @@ a .buy{
     margin-bottom: 20%;
 }
 
+.word_contact a:active{
+    color: #b6b6b6;
+}
+
+.word_contact a{
+    color: #5c5c5c;
+    font-weight: 600;
+}
+
 .fa-heart{
     display: inline-block;
     font-size: 24px;

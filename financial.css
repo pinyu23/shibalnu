@@ -6,10 +6,13 @@
 main{
     text-align: center;
     margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .fin_tip{
-    display: inline-block;
+    /* display: inline-block; */
     vertical-align: top;
     margin: 10px;
 }
@@ -175,8 +178,9 @@ main{
 .fin_contact_word h2{
     color: #5c5c5c;
     font-size: 26px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 1.4;
 }
 
 .fin_contact_word h2:hover{
@@ -437,6 +441,44 @@ main{
     .fin_article03{
         width: 310px
     }
+
+
+    .fin_tip_1,
+    .fin_tip_2,
+    .fin_tip_3,
+    .fin_tip_4,
+    .fin_tip_5{
+        background-size: 150px 150px;
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .fin_tip_1:hover,
+    .fin_tip_2:hover,
+    .fin_tip_3:hover,
+    .fin_tip_4:hover,
+    .fin_tip_5:hover{
+        background-size: 150px 150px;
+        height: 150px;
+        width: 150px;
+    }
+
+
+
+    .fin_tip img {
+        position: absolute;
+        top: 12%;
+        left: 13%;
+    }
+    
+    .fin_tip{
+        margin: auto;
+    }
+
+    
+
+
   }
 
 

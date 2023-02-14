@@ -184,18 +184,18 @@
     }
 
 
-        /* ----------螢幕小於550px時---------- */
-        @media screen and (max-width: 550px){
-          .card_inner{
-            width: 81%;
-          }
-    
-        }
+    /* ----------螢幕小於550px時---------- */
+    @media screen and (max-width: 550px){
+      .card_inner{
+        width: 81%;
+      }
 
-        /* ----------螢幕小於450px時---------- */
-        @media screen and (max-width: 450px){
-          .card_img img{
-            width: 100%;
-          }
-    
-        }
+    }
+
+    /* ----------螢幕小於450px時---------- */
+    @media screen and (max-width: 450px){
+      .card_img img{
+        width: 100%;
+      }
+
+    }

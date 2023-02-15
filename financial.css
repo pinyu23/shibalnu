@@ -404,15 +404,12 @@ main{
         right: 25.3%;
         transform: rotate(-10deg);
     }
-  }
+}
 
 
 
-
-
-
-    /* ----------螢幕小於750px時---------- */
-  @media screen and (max-width: 750px){
+/* ----------螢幕小於750px時---------- */
+@media screen and (max-width: 750px){
     .fin_contact01,
     .fin_contact02,
     .fin_contact03 {
@@ -427,21 +424,19 @@ main{
         margin-bottom: 50px;
     }
 
-  }
+}
 
-    /* ----------螢幕小於500px時---------- */
-  @media screen and (max-width: 500px){
+/* ----------螢幕小於500px時---------- */
+@media screen and (max-width: 500px){
     .fin_contact_word{
         max-width: 75%;
     }
-
 
     .fin_article01,
     .fin_article02,
     .fin_article03{
         width: 310px
     }
-
 
     .fin_tip_1,
     .fin_tip_2,
@@ -464,22 +459,17 @@ main{
         width: 150px;
     }
 
-
-
     .fin_tip img {
         position: absolute;
         top: 12%;
         left: 13%;
     }
-    
+
     .fin_tip{
         margin: auto;
     }
 
-    
-
-
-  }
+}
 
 
 

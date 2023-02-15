@@ -99,10 +99,6 @@
     color: white;
 }
 
-
-
-
-
 /* 直式 */
 
 .wrapper2{
@@ -170,9 +166,6 @@
 }
 
 
-
-
-
 .bank_card_content2 .btn1{
     border: 1px solid #FFBC86;
     background-color: white;
@@ -187,31 +180,29 @@
 
 
 
-  /* ----------螢幕小於1400px時---------- */
-  @media screen and (max-width: 1400px){
+/* ----------螢幕小於1400px時---------- */
+@media screen and (max-width: 1400px){
     .wrapper{
         width: 85%;
     }
     .wrapper2{
         width: 95%;
     } 
-    
-  }
+}
 
 
- /* ----------螢幕小於400px時---------- */
- @media screen and (max-width: 400px){
+/* ----------螢幕小於400px時---------- */
+@media screen and (max-width: 400px){
     .bank_card_content2{
         width: 95%;
     }
+}
+
+
+/* ----------螢幕小於450px時---------- */
+@media screen and (max-width: 1400px){
+    .wrapper{
+        width: 95%;
+    }
     
-  }
-
-
-    /* ----------螢幕小於450px時---------- */
-    @media screen and (max-width: 1400px){
-        .wrapper{
-            width: 95%;
-        }
-        
-      }
+}

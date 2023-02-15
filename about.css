@@ -83,10 +83,6 @@
 }
 
 
-
-
-
-
 .about_img .logo_shadow{
   position: relative;
   /* margin-top: 3%; */
@@ -135,8 +131,6 @@
     scale: .75;
   }
 }
-
-
 
 
 .about_contact{
@@ -281,9 +275,7 @@
 
 
 
-
-
-  /* ----------螢幕小於850px時---------- */
+/* ----------螢幕小於850px時---------- */
 @media screen and (max-width: 850px){
   .about_contact1{
     max-width: 80%;
@@ -317,28 +309,28 @@
 
 
 
-  /* ----------螢幕小於600px時---------- */
-  @media screen and (max-width: 600px){
-    .foot{
-      width: 30px;
-    }
-    .accordion{
-    max-width: 100%
-    }
+/* ----------螢幕小於600px時---------- */
+@media screen and (max-width: 600px){
+  .foot{
+    width: 30px;
   }
-
-
-
-  /* ----------螢幕小於500px時---------- */
-  @media screen and (max-width: 500px){
-    .question div{
-      padding: 10px;
-    }
-    .question img{
-      margin-right: 15px;
-      margin-left: 15px;
-    }
-    .question h3{
-      margin-left: 6px;
-    }
+  .accordion{
+  max-width: 100%
   }
+}
+
+
+
+/* ----------螢幕小於500px時---------- */
+@media screen and (max-width: 500px){
+  .question div{
+    padding: 10px;
+  }
+  .question img{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .question h3{
+    margin-left: 6px;
+  }
+}

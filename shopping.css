@@ -228,14 +228,6 @@ a .buy{
 
 
 
-
-
-
-
-
-
-
-
 #remove_book {
     visibility: hidden;
     min-width: 20px;
@@ -271,15 +263,11 @@ a .buy{
 }
 
 
-
-
 /* 加愛心沒加愛心 end*/
 
 /* ----------螢幕小於500px時---------- */
 @media screen and (max-width: 900px){
-#tab{
-    width: 80%;
+    #tab{
+        width: 80%;
+    } 
 }
-  
-  
-  }

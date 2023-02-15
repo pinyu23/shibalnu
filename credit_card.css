@@ -154,48 +154,48 @@
 }
 
 
-    /* ----------螢幕小於750px時---------- */
-    @media screen and (max-width: 750px){
-      .card_contact{
-          flex-direction: column;
-          align-items: center;
-      }
-      .fin_contact_word{
-          max-width: 60%;
-      }
-  
-      .fin_link{
-          margin-bottom: 50px;
-      }
+/* ----------螢幕小於750px時---------- */
+@media screen and (max-width: 750px){
+  .card_contact{
+      flex-direction: column;
+      align-items: center;
+  }
+  .fin_contact_word{
+      max-width: 60%;
+  }
 
-      .card_inner{
-        width: 69%;
-        align-items: start;
-      }
+  .fin_link{
+      margin-bottom: 50px;
+  }
 
-      .card_contact{
-        margin-top: 50px;
-      }
+  .card_inner{
+    width: 69%;
+    align-items: start;
+  }
 
-      .card_inner{
-        margin-top: 15px
-      }
+  .card_contact{
+    margin-top: 50px;
+  }
 
-    }
+  .card_inner{
+    margin-top: 15px
+  }
+
+}
 
 
-    /* ----------螢幕小於550px時---------- */
-    @media screen and (max-width: 550px){
-      .card_inner{
-        width: 81%;
-      }
+/* ----------螢幕小於550px時---------- */
+@media screen and (max-width: 550px){
+  .card_inner{
+    width: 81%;
+  }
 
-    }
+}
 
-    /* ----------螢幕小於450px時---------- */
-    @media screen and (max-width: 450px){
-      .card_img img{
-        width: 100%;
-      }
+/* ----------螢幕小於450px時---------- */
+@media screen and (max-width: 450px){
+  .card_img img{
+    width: 100%;
+  }
 
-    }
+}

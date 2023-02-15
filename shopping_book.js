@@ -140,5 +140,96 @@ $(".add").click(
 
 
 
+// ---------其他人也看過---------- // 
+
+
+$(function () {
+    slider();
+});
+  
+  
+$(window).resize(function () {
+    slider();
+});
+  
+function slider() {
+    var gNum = 0; //組數的初始值
+    var dX = 0; //水平座標位置
+    var divWidth = $(".slider").width(); //外層寬度
+    var ulNum; //為總組數
+    var liLength = $(".slider .list li").length;
+    var ulWidth;
+    var liWidth;
+    $(".status").html("");
+        if ($(window).width() < 768) {
+            liWidth = divWidth;
+            ulNum = liLength;
+        } else if ($(window).width() <= 960) {
+            liWidth = divWidth / 2;
+            ulNum = liLength  / 2;
+        } else {
+            liWidth = divWidth / 3;
+            ulNum = liLength / 3;
+        }
+  
+        $(".slider .list li").css("width", liWidth);
+        ulWidth = liWidth * liLength;    //ul的寬度
+        $(".slider ul").css("width", ulWidth);
+        if (ulNum <= 1) {
+            $(".dIcon.next").hide();
+            $(".dIcon.prev").hide();
+            } else {
+                $(".dIcon.next").show();
+                $(".dIcon.prev").show();
+                for (var i = 0; i < ulNum; i++) {
+                    $(".status").append("<span class='dot'></span>")
+                }
+                $(".dot").eq(0).addClass("active");
+            }
+        leftAnimate();
+        function leftAnimate() {
+            $(".slider ul").stop().animate({ "left": dX }, 700);
+        }
+  
+        function showDot(point) {
+            $(".dot").removeClass("active");
+            $(".dot").eq(point).addClass("active");
+        }
+  
+  
+    $(".next").click(function () {
+        if (gNum < ulNum - 1) {
+            gNum++;
+            dX = gNum * divWidth * -1;
+        } else {
+            gNum = 0;
+            dX = 0;
+        }
+        leftAnimate();
+        showDot(gNum);
+    });
+  
+    $(".prev").click(function () {
+        if (gNum > 0) {
+            gNum--;
+            dX = gNum * divWidth * -1;
+        }
+        leftAnimate();
+        showDot(gNum);
+    });
+  
+  
+    $(".dot").click(function () {
+        var point = $(this).index();
+        dX = point * divWidth * -1;
+        showDot(point);
+        leftAnimate();
+    });
+  
+}
+
+
+
+
 
     

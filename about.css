@@ -261,11 +261,11 @@
 }
 
 .question p {
-  padding: 30px;
+  padding: 20px;
   font-size: 18px;
 /*   預設把p元素隱藏不顯示 */
   display: none;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-top: 10px;
   background-color: #FFE1AB;
   border-radius: 10px;

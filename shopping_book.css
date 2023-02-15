@@ -210,6 +210,92 @@ main{
     transform: scale(1.1);
   }
 
+  .book_block{
+    width: 500px;
+    height: 590px;
+    border-radius: 10px;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+
+.header_book{
+    display: flex;
+    min-width: 300px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header_book li{
+    flex: 1;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+
+}
+
+
+.box_book{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin: 0 auto;
+    color: #5c5c5c;
+}
+
+.box_book li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    min-width: 300px;
+    width: 70%;
+    background-color: yellow;
+    display: none;
+
+}
+
+
+
+.box_book .active{
+    display: block;
+    margin: 0 auto;
+    background-color: #FFF2D8;
+}
+
+
+.header_book .active{
+  display: block;
+  margin: 0 auto;
+  background-color: #FFF2D8;
+}
+
+.active div{
+
+}
+
+
+.box_book li div{
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 30px;
+}
+
+.box_book li h3{
+  font-size: 22px;
+}
+
+.about_book{
+  margin-top: 50px;
+}
+
+.help{
+  height: 20px;
+  margin-top: 20px;
+}
+
 
   /* ----------螢幕小於935px時---------- */
   @media screen and (max-width: 935px){

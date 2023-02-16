@@ -179,7 +179,7 @@ main{
   left: 5%;
   text-align: left;
   /* font-size: 24px; */
-  font-size: 1.8;
+  font-size: 1.5vw;
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 1.2;
@@ -194,7 +194,7 @@ main{
   left: 5%;
   text-align: left;
   /* font-size: 16px; */
-  font-size: 1.4vw;
+  font-size: .9vw;
   font-weight: 600;
   /* letter-spacing: 2px; */
   line-height: 1.9;
@@ -208,7 +208,7 @@ main{
   left: 5%;
   text-align: left;
   /* font-size: 24px; */
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 1.2;
@@ -246,7 +246,7 @@ main{
   left: 5%;
   text-align: left;
   /* font-size: 16px; */
-  font-size: 1.4vw;
+  font-size: .9vw;
   font-weight: 600;
   /* letter-spacing: 2px; */
   line-height: 1.9;
@@ -277,7 +277,7 @@ main{
   left: 34%;
   text-align: left;
   /* font-size: 24px; */
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 1.2;
@@ -288,11 +288,11 @@ main{
   /* top: 200px;
   left: 130px; */
   max-width: 60%;
-  top: 40%;
+  top: 48%;
   left: 34%;
   text-align: left;
   /* font-size: 16px; */
-  font-size: 1.4vw;
+  font-size: .9vw;
   font-weight: 600;
   /* letter-spacing: 2px; */
   line-height: 1.9;
@@ -306,7 +306,7 @@ main{
   left: 34%;
   text-align: left;
   /* font-size: 24px; */
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 1.2;
@@ -320,7 +320,7 @@ main{
   left: 34%;
   text-align: left;
   /* font-size: 16px; */
-  font-size: 1.4vw;
+  font-size: .9vw;
   font-weight: 600;
   /* letter-spacing: 2px; */
   line-height: 1.9;
@@ -464,11 +464,11 @@ main{
   }
 
   .main_bank_word{
-    margin-top: 10%;
+    margin-top: 70px;
   }
 
   .main_card_word{
-    margin-top: 5%;
+    margin-top: 50px;
   }
 
 

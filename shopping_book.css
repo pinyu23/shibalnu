@@ -365,6 +365,121 @@ background-size: cover;
 }
 
 
+
+/* 加入購物車 */
+
+#add_buy {
+  visibility: hidden;
+  min-width: 20px;
+  /* margin-left: -125px; */
+  background-color: #FFBD87;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  left: calc(50% - 100px);
+  bottom: 30px;
+  font-size: 20px;
+}
+
+#add_buy i{
+  margin-bottom: 20px;
+}
+
+
+  
+#add_buy.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 1s;
+  
+}
+  
+  
+@keyframes fadein {
+  from {bottom: 30px; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+  
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 30px; opacity: 0;}
+}
+
+
+
+
+#jsimg {
+  visibility: hidden;
+  /* max-width: 20px; */
+  /* margin-left: -125px; */
+  /* background-color: #FFBD87; */
+  box-shadow: 1px 2px 5px rgb(48 48 48 / 25%);
+  color: #fff;
+  text-align: center;
+  border-radius: 1px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  left: calc(50% - 60px);
+  bottom: 270px;
+  font-size: 20px;
+}
+
+#jsimg img{
+  max-width: 100px;
+
+}
+
+#jsimg.show {
+  visibility: visible;
+  animation: appear .005s, big_small 1.5s .1s;
+}
+
+@keyframes appear {
+  from {bottom: 270px; opacity: 0;}
+  to {bottom: 270px; opacity: 1;}
+}
+  
+@keyframes big_small {
+  /* from {bottom: 270px; opacity: 1;}
+  to {bottom: 570px; right: 20%; opacity: 0; scale: 0;} */
+
+  0%{
+    bottom: 270px; left: calc(50% - 60px); scale: 1; opacity: 1;
+  }
+  20%{
+    bottom: 360px; left: calc(50% - 45px); scale: .98;
+  }
+  40%{
+    bottom: 450px; left: calc(50% - 30px); scale: .95;
+  }
+  55%{
+    bottom: 540px; left: calc(50% - 15px); scale: .90;
+  }
+  70%{
+    bottom: 650px; left: calc(50% - 0px); scale: .85;
+  }
+  80%{
+    bottom: 720px; left: calc(50% - -15px); scale: .80;
+  }
+  90%{
+    bottom: 810px; left: calc(50% - -30px); scale: .75;
+  }
+  95%{
+    bottom: 900px; left: calc(50% - -45px); scale: .70;
+  }
+  97%{
+    bottom: 990px; left: calc(50% - -60px); scale: .65;
+  }
+  100%{
+    bottom: 1080px; opacity: 0;
+  }
+}
+
+
 /* ----------螢幕小於935px時---------- */
 @media screen and (max-width: 935px){
   .book_inf{

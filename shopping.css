@@ -102,7 +102,7 @@ span {
   
 
 #tab{
-margin: 50px auto;
+margin: 30px auto;
 max-width: 1102px;
 }
 
@@ -190,6 +190,30 @@ a .buy{
     vertical-align: middle;
 }
 
+.page{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .page a{
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FFBD87;
+    border: 2px solid #FFBD87;
+    border-radius: 50%;
+    font-weight: 600;
+    margin: 0 5px;
+  }
+  
+  .page a:active,
+  .page a:hover{
+    background-color: #FFBD87;
+    color: white;
+  }
+
 
 /* 加愛心沒加愛心 */
 
@@ -265,9 +289,16 @@ a .buy{
 
 /* 加愛心沒加愛心 end*/
 
-/* ----------螢幕小於500px時---------- */
+/* ----------螢幕小於900px時---------- */
 @media screen and (max-width: 900px){
     #tab{
         width: 95%;
     } 
+}
+
+/* ----------螢幕小於500px時---------- */
+@media screen and (max-width: 500px){
+    #tab > ul > li > a { 
+        font-size: 16px;
+    }
 }

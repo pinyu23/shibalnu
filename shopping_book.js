@@ -231,6 +231,20 @@ function slider() {
 }
 
 
+// ---------加入---------- //
+let buy_btn = document.getElementById("buy1");
+let add_buy = document.getElementById("add_buy");
+let jsimg = document.getElementById("jsimg");
+buy_btn.addEventListener("click", function(){
+    add_buy.className = "show";
+    setTimeout(function(){ add_buy.className = add_buy.className.replace("show", ""); }, 1400);
+    jsimg.className = "show";
+    setTimeout(function(){ jsimg.className = jsimg.className.replace("show", ""); }, 1400);
+});
+
+
+
+
 
 
 

@@ -429,6 +429,12 @@ main{
     margin-bottom: 59px;
   }
 
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #5c5c5c;
+    width: 6px;
+    height: 6px;
+  }
+
 }
 
 
@@ -496,6 +502,13 @@ main{
   .swiper-slide img {
     border-radius: 0px;
   }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #5c5c5c;
+    width: 4px;
+    height: 4px;
+  }
+
 }
 
 

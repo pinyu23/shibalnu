@@ -156,6 +156,37 @@
 }
 
 
+
+
+
+
+
+
+
+.page{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.page a{
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #FFBD87;
+  border: 2px solid #FFBD87;
+  border-radius: 50%;
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+.page a:active,
+.page a:hover{
+  background-color: #FFBD87;
+  color: white;
+}
+
 /* ----------螢幕小於750px時---------- */
 @media screen and (max-width: 750px){
   .item_left {

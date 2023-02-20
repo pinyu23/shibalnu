@@ -33,6 +33,7 @@ let lightbox_2_el = document.getElementById("lightbox_2");
 var header_navigation_sign_up= document.getElementsByClassName("header_navigation_sign_up")[0];
 header_navigation_sign_up.addEventListener("click", function(){
     lightbox_2_el.classList.remove("none");
+    scrollhide.style.overflow ="hidden";
 });
 
 

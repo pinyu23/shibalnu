@@ -1,6 +1,6 @@
 // ---------登入---------- // 
 let lightbox_el = document.getElementById("lightbox");
-let scrollhide = document.querySelector('body');
+// let scrollhide = document.querySelector('body');
 
 // 頁面上的按鈕
 var header_navigation_log_in= document.getElementsByClassName("header_navigation_log_in")[0];

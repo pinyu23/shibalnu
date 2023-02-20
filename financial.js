@@ -1,6 +1,6 @@
 // ---------登入---------- //    
 let lightbox_el = document.getElementById("lightbox");
-// let scrollhide = document.querySelector('body');
+let scrollhide = document.querySelector('body');
 
 // 頁面上的按鈕
 var header_navigation_log_in= document.getElementsByClassName("header_navigation_log_in")[0];
@@ -13,11 +13,13 @@ header_navigation_log_in.addEventListener("click", function(){
 var log_in_close = document.getElementsByClassName("log_in_close")[0];
 log_in_close.addEventListener("click", function(){
     lightbox_el.classList.add("none");
+    scrollhide.style.overflow ="auto";
 });
 
 
 lightbox_el.addEventListener("click", function(){
     this.classList.add("none");
+    scrollhide.style.overflow ="auto";
 });
 
 // 點擊 lightbox 中的白色區域，不會關掉 modal
@@ -40,11 +42,13 @@ header_navigation_sign_up.addEventListener("click", function(){
 var sign_in_close = document.getElementsByClassName("sign_in_close")[0];
 sign_in_close.addEventListener("click", function(){
     lightbox_2_el.classList.add("none");
+    scrollhide.style.overflow ="auto";
 });
 
 
 lightbox_2_el.addEventListener("click", function(){
     this.classList.add("none");
+    scrollhide.style.overflow ="auto";
 });
 
 // 點擊 lightbox 中的白色區域，不會關掉 modal
